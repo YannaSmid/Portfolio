@@ -1,0 +1,38 @@
+
+
+// /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+// function openNav() {
+
+//     document.getElementById("arrow-icon").style.transform = "translate(150px, 50vh)";
+//     document.getElementById("arrow-icon").classList.toggle("active");
+//     document.getElementById("mySidenav").style.width = "250px";
+//     document.getElementById("projects").style.marginLeft = "250px";
+//     document.getElementById("projectsyear1").style.marginLeft = "250px";
+//     document.getElementById("projectsyear2").style.marginLeft = "250px";
+   
+//   }
+  
+//   /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+//   function closeNav() {
+//     document.getElementById("arrow-icon").style.transform = "translate(0, 50vh)";
+//     document.getElementById("arrow-icon").classList.toggle("active");
+//     document.getElementById("mySidenav").style.width = "0";
+//     document.getElementById("projects").style.marginLeft = "0";
+//     document.getElementById("projectsyear1").style.marginLeft = "0";
+//     document.getElementById("projectsyear2").style.marginLeft = "0";
+//   }
+
+function toggleNav() {
+    const arrowIcon = document.getElementById("arrow-icon");
+    const sidebar = document.getElementById("mySidenav");
+    const isOpen = sidebar.style.width === "250px";
+  
+    // Toggle the sidebar width and margin
+    sidebar.style.width = isOpen ? "0" : "250px";
+    document.getElementById("projects").style.marginLeft = isOpen ? "0" : "250px";
+    document.getElementById("projectsyear1").style.marginLeft = isOpen ? "0" : "250px";
+    document.getElementById("projectsyear2").style.marginLeft = isOpen ? "0" : "250px";
+  
+    // Add/remove active class
+    arrowIcon.classList.toggle("active", !isOpen);
+  }

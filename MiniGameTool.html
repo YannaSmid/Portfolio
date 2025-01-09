@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mini Game Tool</title>
+    <link rel="stylesheet" href="projectstyle.css">
+</head>
+<body>
+    <!-- Navbar Section -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">MyPortfolio</div>
+            <button class="hamburger" aria-label="Toggle navigation">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero" style="background-image: url('images/MiniGameTool/MiniGameTool2.jpg'); background-position: 20% 50%;">
+        <div class = "overlay"></div>
+        <div class="hero-text">
+            <h1>Mini Game Tool</h1>
+            <p>A creative tool that let's you create your own mini game.</p>
+        </div>
+    </div>
+
+    <main>
+        <!-- Overview Section -->
+        <section class="contributors">
+            <h>
+                By Yanna Smid
+            </h>
+        </section>
+        <section class="project-overview">
+            <div class="container">
+                <h2>Project Overview</h2>
+                <p>
+                    Who doesn’t love playing a quick, fun mini-game? 
+                    The Mini Game Tool empowers users to design their own parkour-style games, 
+                    complete with challenges, enemies, and goals. After building their levels, users 
+                    can immediately play and test their creations, enjoying the thrill of conquering custom-designed courses. 
+                </p>
+                <p>The course Creative Programming tasked us to develop a creative tool. With my interest in Video Games 
+                    I decided to develop a creative tool that can be used to create a quick mini game. The tool provides an 
+                    intuitive interface for users to design simple mini-games. In addition, it offers an engaging gameplay 
+                    mode to test and enjoy the level created by the user. This encourages creativity and experimentation through game design.
+                </p>
+                
+            </div>
+        </section>
+
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 5</div>
+              <img src="images/MiniGameTool/MiniGameTool1.jpg">
+          
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 5</div>
+              <img src="images/MiniGameTool/MiniGameTool2.jpg" >
+             
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 5</div>
+              <img src="images/MiniGameTool/MiniGameTool3.jpg" ">
+            
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 5</div>
+                <img src="images/MiniGameTool/MiniGameTool4.jpg" ">
+              
+              </div>
+
+              <div class="mySlides fade">
+                <div class="numbertext">5 / 5</div>
+                <img src="images/MiniGameTool/MiniGameTool5.jpg"">
+          
+              </div>
+
+
+          
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+          
+          <!-- The dots/circles -->
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+          </div>
+    
+
+        <!-- Features Section -->
+        <section class="Key Features">
+            <div class="container">
+                <h2>Features</h2>
+                <ul>
+                    <li>Level Editor Mode: Here users can place fixed-size game elements like ground tiles, enemies, 
+                        a playable character and a goal. This mode includes an instructional bar for a straightforward design process.
+                        </li>
+                    <li>Gameplay Mode: This mode allows the player to play the lever they created. Players can walk, 
+                        jump, and stick to ceilings within the designed levels. Physics-based mechanics, such as falling
+                         and collision detection, create challenges. Winning conditions consider reaching the green goal. 
+                         Losing conditions are met when colliding with enemies or falling off the map.
+                        </li>
+                </ul>
+                
+            </div>
+        </section>
+
+
+        <!-- Technical Details Section -->
+        <section class="technical-details">
+            <div class="container">
+                <h2>Technical Details</h2>
+                <ul>
+                    <li>
+                        Programming: Java, Processing     
+                    </li>
+                    <li>
+                        Interface design: color coding was used where green presents the goal, red the enemies, blue the player, and black the tiles. 
+                        Moreover, grids were shown in the editor interface, for a clearer drawing experience.   
+                    </li>
+                </ul>
+
+            </div>
+        </section>
+
+
+        <!-- Future Work Section -->
+        <section class="Process">
+            <div class="container">
+                <h2>Process</h2>
+                <ul>
+                    <li>Conceptualization: I developed the idea of a mini-game creation tool inspired by my interest in Game AI and Development. 
+                        I wanted to focus on simplicity to encourage creativity without overwhelming the users.</li>
+                    <li>Implementation: I created a dual-mode system with a Level Editor and Gameplay Mode. Integrated 
+                        physics-based mechanics and collision detection for realistic gameplay. </li>
+                    <li>Testing: After multiple test runs, various errors were resolved and challenges were faced. Mouse and button interaction issues were optimized to enhance functionality. 
+                        Moreover, user tests were applied to test the usability and the straightforwardness of the application.</li>
+                    
+                </ul>
+                <img src="images/MiniGameTool/MiniGameToolwin.jpg" width="100%">
+            </div>
+        </section>
+
+        <section class="reflection">
+            <div class="container">
+            <h2>Reflection</h2>
+            <p>This project challenged me to balance user friendly design with engaging gameplay mechanics in Processing.
+                 While some features, such as the eraser tool, were too complex to implement in Processing, I am planning to continue this work and add this feature in the future. 
+                 I am proud of the intuitive game experience that I created. This project allowed me to use my interest in game development 
+                 and reinforce my ability to tackle complex programming challenges. I am happy with the result, and users really enjoyed it!
+
+                 <video src="images/MiniGameTool/gameDesignTool.mp4" width="100%"  controls></video>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Yanna Smid. All rights reserved.</p>
+    </footer>
+
+    <script src="hamburger.js"></script>
+    <script src="slider.js"></script>
+</body>
+</html>

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+</head>
+
+<body>
+
+<!-- MAIN (Center website) -->
+
+  <!-- Navbar Section -->
+  <header>
+    <nav class="navbar">
+        <div class="logo">MyPortfolio</div>
+        <button class="hamburger" aria-label="Toggle navigation">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>  
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </button>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+ <!-- Hero Section -->
+<!-- <div class="hero" id="home" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/taylor_headframe.jpg');">
+    <div class="hero-text">
+        <h1>Welcome to my <span class="purple-text">Projects</span> section</h1>
+    </div>
+</div> -->
+
+<!-- Highlight Section -->
+<section id="highlight">
+    <h2>Highlights</h2>
+    
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade" style="width: 80%; height: 40%; object-fit: cover;">
+          <a href="projects_itrl_fe.html">
+          <img src="images/ITRL/Type1_qlearning.png">
+          <div class="text">Game AI in Strategy Games.</div>
+          </a>
+        </div>
+      
+        <div class="mySlides fade">
+          <a href="zebrafishvr.html">
+          <img src="images/ZebrafishVR/quiz.png" >
+          <div class="text">Virtual Reality for Studies.</div>
+        </a>
+        </div>
+      
+        <div class="mySlides fade">
+          <a href="RiddleExperiment.html">
+          <img src="images/NHC/NHCBanner.png" ">
+          <div class="text">AI Performance in Card Games.</div>
+        </a>
+        </div>
+
+      
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+      
+      <!-- The dots/circles -->
+      <!-- <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div> -->
+</section>
+
+
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="toggleNav()">&times;</a>
+    <img src="images/pixelme.jpg">
+    <div style="padding: 45%;"></div>
+    <h2>Filter: </h2>
+    <div class="filter-options" id="filter-buttons">
+        <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+        <button class="btn" onclick="filterSelection('Unity')"> Unity</button>
+        <button class="btn" onclick="filterSelection('C#')"> C#</button>
+        <button class="btn" onclick="filterSelection('Python')"> Python</button>
+        <button class="btn" onclick="filterSelection('C++')">C++</button>
+        <button class="btn" onclick="filterSelection('Java')"> Java</button>
+        <button class="btn" onclick="filterSelection('AI')"> AI</button>
+    </div>
+  </div>
+
+
+  <!-- Use any element to open the sidenav
+  <span onclick="openNav()">open</span> -->
+<!-- Arrow Icon -->
+<div class="arrow-icon" id="arrow-icon" onclick="toggleNav()">
+    >
+</div>
+
+
+<section id="projects" class="projects" >
+    <h2>Projects</h2>
+
+<!-- Portfolio Gallery Grid -->
+<section class="year-1">
+<h3>Computer Science Year 3</h3>
+<div class="row">
+
+    <div class="column Unity C# Year1 Year2">
+        <div class="content">
+            <a href="zebrafishvr.html">
+            <div class="project-card">
+                <div class="project-card-inner">
+                    <div class="project-card-front">
+                        <img src="images/ZebrafishVR/ontology_finalversion.JPG" alt="ontology">
+                    </div>
+                    <div class="project-card-back">
+                        <p>Ever wondered what the benefits of VR could be on study efficiency? In this research, I made a VR application to study the anatomy of a zebrafish fetus.</p>
+                    </div>
+                </div>
+            </div>
+            </a>
+          <h4>Anatomy in VR</h4>
+        </div>
+      </div>
+
+      <div class="column Python RL Year1 Year2">
+        <div class="content">
+            <a href="projects_itrl_fe.html">
+            <div class="project-card">
+                <div class="project-card-inner">
+                    <div class="project-card-front">
+                        <img src="images/ITRL/Type2_expsarsa.png" alt="Lavender">
+                    </div>
+                    <div class="project-card-back">
+                        <p>I let agents complete a simplified version based on the strategy game Fire Emblem Heroes, through Reinforcement Learning. </p>
+                    </div>
+                </div>
+            </div>
+            </a>
+          <h4>RL for Path Finding</h4>
+        </div>
+      </div>
+
+</div>
+</section>
+
+
+<section class="year-1">
+<h3>Media Technology Year 1</h3>
+<div class="row">
+  
+
+  <div class="column Python AI Year1">
+    <div class="content">
+        <a href="pokemonAI.html">
+        <div class="project-card" >
+            <div class="project-card-inner">
+                <div class="project-card-front">
+                    <img src="images/Pokemon/MT.jpg" alt="PokemonAI">
+                </div>
+                <div class="project-card-back">
+                    <p>In this project, I created an interface where you can generate a Pokémon using AI based on your preferences.</p>
+                </div>
+            </div>
+        </div>
+        </a>
+      <h4>Gotta cAItch 'em all</h4>
+    </div>
+  </div>
+  
+  <div class="column Unity PureData Year1">
+    <div class="content">
+        <a href="TreasureHunt.html">
+        <div class="project-card">
+            <div class="project-card-inner">
+                <div class="project-card-front">
+                    <img src="images/SSI/meTreasurehunt2.jpg" alt="TreasureHunt">
+                </div>
+                <div class="project-card-back">
+                    <p>Can you find the treasure before the zombies catch up? Listen closely to your surroundings and avoid danger!</p>
+                </div>
+            </div>
+        </div>  
+        </a>
+      <h4>Treasure Hunt</h4>
+    </div>
+  </div>
+
+  <div class="column Arduino C++ Year1">
+    <div class="content">
+        <div class="project-card">
+            <a href="GregtheEgg.html">
+            <div class="project-card-inner">
+                <div class="project-card-front">
+                    <img src="images/Gregg/greggbanner.jpg" alt="Greg">
+                </div>
+                <div class="project-card-back">
+                    <p>Come meet Greg the Egg, the gregarious little creature!</p>
+                </div>
+            </div>
+            </a>
+        </div>  
+      <h4>Greg the Egg</h4>
+    </div>
+  </div>
+
+
+  <div class="column Python AI Year1">
+    <div class="content">
+        <div class="project-card">
+            <a href="PoemGenerator.html">
+            <div class="project-card-inner">
+                <div class="project-card-front">
+                    <img src="images/taylor_tsmwel.jpg" alt="tsmwel">
+                </div>
+                <div class="project-card-back">
+                    <p>Let yourself inspire with the Poetic Taybot, a poem generator trained on Taylor Swift's lyrics.</p>
+                </div>
+            </div>
+        </a>
+        </div>  
+      <h4>Poetic Taybot</h4>
+    </div>
+  </div>
+
+  <div class="column Processing Java Year1">
+    <div class="content">
+        <a href="MiniGameTool.html">
+        <div class="project-card">
+            <div class="project-card-inner">
+                <div class="project-card-front">
+                    <img src="images/MiniGameTool/MiniGameTool1.jpg" alt="MiniGameTool">
+                </div>
+                <div class="project-card-back">
+                    <p>Draw your own Mini Game with this creative tool!</p>
+                </div>
+            </div>
+        </div> 
+        </a> 
+        <h4>The Mini Game Tool</h4>
+    </div>
+  </div>
+
+  <div class="column Python AI Year1">
+    <div class="content">
+        <a href="RiddleExperiment.html">
+        <div class="project-card">
+            <div class="project-card-inner">
+                <div class="project-card-front">
+                    <img src="images/NHC/card.jpg" alt="Riddle">
+                </div>
+                <div class="project-card-back">
+                    <p>Two groups are trying to solve a black story behind a screen. Only one group is alive.</p>
+                </div>
+            </div>
+        </div>  
+        </a>
+        <h4>The Riddle Experiment</h4>
+    </div>
+  </div>
+
+  <div class="column Unity C# Year1">
+    <div class="content">
+        <a href="crisprgame.html">
+        <div class="project-card">
+            <div class="project-card-inner">
+                <div class="project-card-front">
+                    <img src="images/Crispr/crisp1.jpg" alt="ily">
+                </div>
+                <div class="project-card-back">
+                    <p>Learn more about the Crispr Cas9 with this game that transform this mechanism into a playful and creative expression.</p>
+                </div>
+            </div>
+        </div>  
+        </a>
+        <h4>Crispr Game9</h4>
+    </div>
+  </div>
+
+</div>
+</section>
+
+<section class="year-2">
+<h3>Media Technology Year 2</h3>
+<div class="row">
+  
+  
+  <div class="column Unity C# Year1">
+    <div class="content">
+        <a href="shadesofmorality.html">
+        <div class="project-card">
+            <div class="project-card-inner">
+                <div class="project-card-front">
+                    <img src="images/Moral/magic.jpg" alt="ily">
+                </div>
+                <div class="project-card-back">
+                    <p>Wonder what influence immortality has on in-game moral choices? Click here to see our research that investigates this question.</p>
+                </div>
+            </div>
+        </div>  
+         </a>
+        <h4>Shades of Morality</h4>
+    </div>
+  </div>
+
+<!-- END GRID -->
+</div>
+</section>
+
+</section>
+
+
+<!-- END MAIN -->
+
+
+<script src="filter_script.js"></script>
+<script src="hamburger.js"></script>
+<script src="sideNavbar"></script>
+<script src="slider.js"></script>
+
+</body>
+</html>

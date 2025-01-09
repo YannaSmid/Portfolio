@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pokemon AI Generator</title>
+    <link rel="stylesheet" href="projectstyle.css">
+</head>
+<body>
+    <!-- Navbar Section -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">MyPortfolio</div>
+            <button class="hamburger" aria-label="Toggle navigation">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero" style="background-image: url('images/SSI/SSITreasureHuntSanne.png'); background-position: 20% 100%;">
+        <div class = "overlay"></div>
+        <div class="hero-text">
+            <h1>Treasure Hunt</h1>
+            <p>A Game based on Sound, Space, and Interaction.</p>
+        </div>
+    </div>
+
+    <main>
+        <!-- Overview Section -->
+        <section class="contributors">
+            <h>
+                Team Members: Nikki Rademaker, Yanna Smid
+            </h>
+        </section>
+        <section class="project-overview">
+            <div class="container">
+                <h2>Project Overview</h2>
+                <p>
+                    Step into the invisible world of the Treasure Hunt, an immersive and interactive auditory 
+                    game where players rely on their ears to locate hidden treasure. But beware, lurking zombies 
+                    guard the treasure, and a ticking timer adds to the pressure. Can you find the treasure before 
+                    time runs out, without falling prey to the zombies?
+                </p>
+                <p>
+                    The Treasure Hunt combines sound, space, and interaction to create a unique 
+                    sensory experience. Designed for the Sound, Space, Interaction course, this project 
+                    utilizes PureData and the HTC Vive VR set to transform a physical space into an engaging auditory treasure hunt.
+                </p>
+                
+            </div>
+        </section>
+
+    
+
+        <!-- Features Section -->
+        <section class="Key Features">
+            <div class="container">
+                <h2>Features</h2>
+                <ul>
+                    <li>Interactive Gameplay: Players can navigate through a room with a tracker in their hands, searching for the treasure guided solely by sound. The tracker’s position determines the proximity to the treasure and zombies, allowing the physical engagement of the game.</li>
+                    <li>Randomization: Treasure and zombie locations are randomly assigned in the room but remain sufficiently spaced to ensure gameplay balance. The time limit is also randomly selected to add variability. This ensures a different position of the game each playthrough.</li>
+                    <li>Game Experience: Zombies “guard” the treasure with growling audio cues getting louder when approaching the zombies. This significantly affects the intensity of the game. Physical obstacles in the room heighten the difficulty, to manoeuvre through the room.</li>
+                </ul>
+            </div>
+        </section>
+
+
+        <!-- Technical Details Section -->
+        <section class="technical-details">
+            <div class="container">
+                <h2>Technical Details</h2>
+                <p>The system keeps track of the player's location through the HTC Vive basestations. The location data is sent to a PureData patch through Unity. The following hardware and software are required:
+                </p>
+                <ul>
+                    <li>
+                        HTC Vive VR Set: The HTC Vive tracker is used to track the player’s position and orientation, relaying real-time x and y coordinates to the game system.
+                    </li>
+                    <li>
+                        Speakers: Four speakers are placed in the room, one in each corner, to enhance spatial sound, immersing players in the auditory experience.
+                    </li>
+                    <li>PureData: Processes sound cues, using oscillators and synthesized noise for the tracker and zombies.</li>
+                    <li>Unity: Handles spatial integration, connecting the tracker data to the PureData patch.</li>
+                </ul>
+
+            </div>
+        </section>
+
+        <section class="design">
+            <div class="container">
+                <h2>Design Features</h2>
+                <p>The system keeps track of the player's location through the HTC Vive basestations. The location data is 
+                    sent to a PureData patch through Unity. The following hardware and software are required:
+                </p>
+                <ul>
+                    <li>
+                        Beeping Sound from the Tracker: We synthesized a beeping sound through an oscillator in 
+                        PureData, starting at 380 Hz. The beep frequency increases as the player nears the treasure.
+                    </li>
+                    <li>
+                        Zombie Growls: A samplified .wav file from Minecraft is used for 
+                        zombie growls. We amplified the sound proportionally to the player’s proximity to the zombies.
+                    </li>
+                    <li>Timer: Ticking sound starts softly, progressively intensifying until time runs out. 
+                        Volume scales from 0.5 to 13 over the randomly assigned time limit.</li>
+                    <li>•	Game End Feedback: A victory sound is played when the player has found the treasure on time. 
+                        A defeated game over tune is played when time runs out. An evil laughter sound is played when the 
+                        player was captured by the zombies.</li>
+                </ul>
+
+            </div>
+        </section>
+
+
+        <!-- Process Section -->
+        <section class="Process">
+            <div class="container">
+                <h2>Process</h2>
+                <ul>
+                    <li>1.	Conceptualization: My teammate Nikki Rademaker and I are interested in Game Development 
+                        and we quickly came to the conclusion that we wanted to create a fun interactive game using 
+                        the environment and intriguing sound. </li>
+                    <li>Set-up: The HTC Vive base stations needed to be installed in the room to the PC and Computer screen.
+                         After everything was set up, the HTC Vive application had to be installed on the PC, and the 
+                         virtual room had to be assigned through the application. Moreover, four speakers were placed in the room, 
+                         used as output mechanism of the PC.  </li>
+                    <li>PureData Unity connection: A Unity project was developed to connect to PureData to transfer the data 
+                        tracked by the HTC Vive tracker to the PureData patch.</li>
+                    <li>Implementation: The PureData patch was implemented and ran on the PC connected to the HTC Vive application. 
+                        This patch contained all the necessary code for the space and sound interaction. </li>
+                    <li>Finetuning: After the implementation was done, the whole set-up and program was tested. 
+                        Through multiple test runs, the sound parameters such as frequency and amplitude, were adjusted to 
+                        allow optimal sound experience. </li>
+                    <li>Showcasing: The program was showcased and played by multiple friends and classmates. </li>
+                </ul>
+                <video src="images/SSI/SanneTesting.mp4" width="70%" controls>
+                </video>
+            </div>
+            
+        </section>
+
+        <section class="reflection">
+            <div class="container">
+            <h2>Reflection</h2>
+            <p>Working on Treasure Hunt was a rewarding experience that allowed us to combine our technical knowledge with 
+                creative problem-solving. We had fun to create a different type of game where a player is physically emerged 
+                in the game, allowing to use their surroundings. We successfully integrated the HTC Vive set for precise tracking 
+                and spatial interaction and created a compelling auditory experience that challenged players’ spatial awareness and
+                listening skills. Moreover, we designed a dynamic, unpredictable gameplay loop that kept players engaged. 
+                We learned that the integrating Unity with PlugData is possible using Open Sound Control making more projects
+                possible using real-time sound and space in Unity. 
+                Players were very positive about the game and they were insisting to try it again after they did not manage to find the treasure.
+                 </p>
+
+                 <video src="images/SSI/meLoosing.mp4" width="30%"  controls></video>
+            </div>
+
+            
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Yanna Smid. All rights reserved.</p>
+    </footer>
+
+    <script src="hamburger.js"></script>
+    <script src="slider.js"></script>
+</body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shades of Morality</title>
+    <link rel="stylesheet" href="projectstyle.css">
+</head>
+<body>
+    <!-- Navbar Section -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">MyPortfolio</div>
+            <button class="hamburger" aria-label="Toggle navigation">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero" style="background-image: url('images/Moral/beginning.jpg'); background-position: 20% 80%;">
+        <div class = "overlay"></div>
+        <div class="hero-text">
+            <h1>Shades of Morality</h1>
+            <p>What morals will you push aside for your own power?</p>
+        </div>
+    </div>
+
+    <main>
+        <!-- Overview Section -->
+        <section class="contributors">
+            <h>
+                By Yanna Smid and Nikki Rademaker
+            </h>
+        </section>
+        <section class="project-overview">
+            <div class="container">
+                <h2>Project Overview</h2>
+                <p>
+                    How do players’ moral choices shift when immortality is introduced? Shades of Morality, 
+                    a 2D platformer game, investigates this intriguing question. This research-based video game 
+                    explores the effects of mortality and immortality on player behavior, offering unique insights
+                     into decision-making in virtual environments.
+                </p>
+                <p>Shades of Morality was developed for the Video Games for Research course to investigate how immortality affects in-game moral decision-making.
+                 By engaging players in morally charged dilemmas 
+                    across mortal and immortal gameplay modes, this project sought to explore how virtual consequences shape player choices.
+                </p>
+                
+            </div>
+        </section>
+
+        <div class="slideshow-container" style="width: 80%;">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="images/Moral/coin.jpg">
+          
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="images/Moral/magic.jpg" >
+             
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="images/Moral/sword.jpg">
+            
+            </div>
+
+          
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+          
+          <!-- The dots/circles -->
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+    
+
+        <!-- Features Section -->
+        <section class="Key Features">
+            <div class="container">
+                <h2>Features</h2>
+                <ul>
+                    <li>Moral Dilemmas: Players encounter six carefully crafted moral choices that influence gameplay outcomes. 
+                        For instance, deciding whether to save a trapped human or take a sword for personal gain presents players 
+                        with challenging ethical decisions.
+                        </li>
+                    <li>Mortality Mechanics: Players were allowed to play two distinct levels. One is the Mortal Mode, where their playable character is able to die, but letting them respawn, creating higher stakes.
+                        The other lever is the Immortal Mode, where players cannot die, allowing risk-free exploration of choices.
+                        </li>
+                    <li>Immersive Gameplay: Platformer mechanics include traps, enemies, and interactive environments that challenge players’ survival and decision-making skills.</li>
+                    <li>Simple, Dark Aesthetic: The game features a mysterious and slightly eerie design, reinforcing its focus on moral ambiguity and the weight of decisions.</li>
+                </ul>
+                
+            </div>
+        </section>
+
+
+        <!-- Technical Details Section -->
+        <section class="Shades of Morality: the Gameplay">
+            <div class="container">
+                <h2>Technical Details</h2>
+                <p>The game is built as a 2D platformer using a Unity layout template by Nick Bota. 
+                    The gameplay includes multiple elements to keep the game engaging.</p>
+                <ul>
+                    <li>
+                        Core Gameplay: The players control an adventurer navigating through mysterious rooms filled with 
+                        moral dilemmas, traps, and enemies. The game features two levels: one where the character is mortal 
+                        and another where they are immortal.  
+                    </li>
+                    <li>
+                        Moral Dilemmas: Each level includes three moral dilemmas where players must choose between moral 
+                        and immoral actions, often trading ethical considerations for in-game rewards. For instance, donate 
+                        money to starving villagers, providing no immediate benefit, or keep the money with no repercussions 
+                        since currency has no importance in the game. Or choosing between freeing a trapped human or acquiring 
+                        a sword that boosts your combat capabilities. Freeing the human offers no reward, while choosing the
+                         sword leaves the human imprisoned.  
+                    </li>
+                    <li>Objective: The primary goal of the game is to survive and reach the end of the level while making 
+                        choices that challenge the player’s moral reasoning.</li>
+                </ul>
+
+            </div>
+        </section>
+
+
+        <!-- Future Work Section -->
+        <section class="Process">
+            <div class="container">
+                <h2>Process</h2>
+                <ul>
+                    <li>Conceptualizing: We found a topic of our research to investigate the influence of immortality on 
+                        moral decisions. We set up a research question and research objectives.</li>
+                    <li>Related Research: We delved into other studies that are related to this work, providing us with 
+                        more insights and motivations to conduct this research.</li>
+                    <li>Research set-up: With our team we developed a plan and a methodology to fulfill this research. 
+                        We decided to create different versions of the games to make sure each room can be played as a moral character and an immortal character.</li>
+                    <li>Game Development: Nikki Rademaker and I then built the game for the purpose of our research. 
+                        We built the game in Unity. The background and environment design was done in Procreate. 
+                        The room features and playable character came from the provided template. NPC’s were collected 
+                        from the Unity Asset store.</li>
+                    <li>Game testing: Before the game could be used for experiments, it had to be tested on bugs and 
+                        usability. This was done by multiple user tests.</li>
+                    <li>Experiments: Experiments were conducted to collect data for the research. In total 36
+                         participants were found. We collected quantitative data on the choices they made and the 
+                         time it took for them to decide. Moreover, they completed a questionnaire to reason their 
+                         choices and mention their game experience.</li>
+                    <li>Analysis: With the collected data we observed no significant differences in moral decisions 
+                        between mortal and immortal modes. However, we identified hesitation and longer decision times 
+                        for immoral actions in both modes. We evaluated feedback to identify areas for improvement, 
+                        including narrative depth and clearer gameplay distinctions between modes.</li>
+
+                </ul>
+             
+            </div>
+        </section>
+
+        <section class="reflection">
+            <div class="container">
+            <h2>Reflection</h2>
+            <p>Developing Shades of Morality was a unique opportunity to merge game design and academic research. While the results showed no significant impact of immortality on moral decisions, the project highlighted the potential of video games as research tools.
+                Feedback revealed that players did not fully grasp the implications of mortality and immortality within the game. Future iterations could address this by:
+                </p>
+            <li>Introducing a stronger storyline to create emotional ties with NPCs.</li>
+            <li>Amplifying the stakes of mortality by removing respawns for players and NPCs, making decisions more impactful.</li>
+        
+            <p>Despite the study's limitations, players enjoyed the game, and the project sparked engaging discussions about ethics in gaming.</p>
+            <img src="images/Moral/character.jpg">
+        </div>
+            
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Yanna Smid. All rights reserved.</p>
+    </footer>
+
+    <script src="hamburger.js"></script>
+    <script src="slider.js"></script>
+</body>
+</html>

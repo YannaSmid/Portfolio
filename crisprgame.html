@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crispr Game</title>
+    <link rel="stylesheet" href="projectstyle.css">
+</head>
+<body>
+    <!-- Navbar Section -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">MyPortfolio</div>
+            <button class="hamburger" aria-label="Toggle navigation">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero" style="background-image: url('images/Crispr/crisp2.jpg'); background-position: 50% 50%;">
+        <div class = "overlay"></div>
+        <div class="hero-text">
+            <h1>Crispr Game9</h1>
+            <p>A playful and creative expression of Crispr Cas9.</p>
+        </div>
+    </div>
+
+    <main>
+        <!-- Overview Section -->
+        <section class="contributors">
+            <h>
+                By Yanna Smid and Nikki Rademaker
+            </h>
+        </section>
+        <section class="project-overview">
+            <div class="container">
+                <h2>Project Overview</h2>
+                <p>
+                    Dive into the fascinating world of genetics and biochemistry with the CRISPR Cas9 Game. 
+                    This game is a fun and educational mini-game designed to visualize the groundbreaking research on 
+                    CRISPR-Cas9, published in 2012. This project transforms complex biological concepts into a playful 
+                    and interactive experience that makes learning about adaptive bacterial immunity both accessible and enjoyable.
+                </p>
+                <p>The CRISPR Cas9 Game was developed as part of the Playful & Creative Science course, 
+                    where we were tasked to express the results of a research in a creative manner. 
+                    My teammate Nikki Rademaker and I chose the article on CRISPR Cas9 because of our
+                     background in Biology. We decided to gamify this scientific research and make it understandable 
+                     for a wider audience. By focusing on the core principles of CRISPR-Cas9, the game aims to simplify 
+                     a highly technical topic and showcase how gamification can bridge the gap between academic research and everyday learning.
+                </p>
+                
+            </div>
+        </section>
+
+        <div class="slideshow-container" style="width: 80%;">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 5</div>
+              <img src="images/Crispr/crispr_beginning.jpg">
+          
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 5</div>
+              <img src="images/Crispr/crispr_beginning2.jpg" >
+             
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 5</div>
+              <img src="images/Crispr/crispr_beginning3.jpg">
+            
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 5</div>
+                <img src="images/Crispr/crisp1.jpg ">
+              
+              </div>
+
+              <div class="mySlides fade">
+                <div class="numbertext">5 / 5</div>
+                <img src="images/Crispr/crisp2.jpg">
+          
+              </div>
+
+
+          
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+          
+          <!-- The dots/circles -->
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+          </div>
+    
+
+        <!-- Features Section -->
+        <section class="Key Features">
+            <div class="container">
+                <h2>Features</h2>
+                <ul>
+                    <li>Educational Gameplay: Players interact with fundamental CRISPR-Cas9 concepts, 
+                        including crRNA-DNA pairing, PAM sequence recognition, and the cutting of DNA strands.
+                        </li>
+                    <li>Two-Part Game Structure to prevent cognitive overload. The first part is a preparation phase where players create complementary crRNA strands and select a Cas9 enzyme.
+                        The second part is the main gameplay phase where players locate the correct DNA strand and PAM sequence.
+                        </li>
+                    <li>Visual Simplicity: Clean visuals and intuitive mechanics ensure the focus remains on learning, 
+                        avoiding unnecessary distractions.</li>
+                    <li>Randomization: DNA strands and PAM sequences are randomly generated in each playthrough, 
+                        adding replay value and reinforcing core principles.</li>
+                    <li>Immediate Feedback: Players see the results of their actions in real time, whether successfully 
+                        cutting DNA or failing at the wrong PAM site. They are provided with an explanation so they can 
+                        learn from the mistakes.</li>
+                </ul>
+                
+            </div>
+        </section>
+
+
+        <!-- Technical Details Section -->
+        <section class="technical-details">
+            <div class="container">
+                <h2>Technical Details</h2>
+                <ul>
+                    <li>
+                        Programming is done in Unity   
+                    </li>
+                    <li>
+                        Interface design is created using Procreate.   
+                    </li>
+                </ul>
+
+            </div>
+        </section>
+
+
+        <!-- Future Work Section -->
+        <section class="Process">
+            <div class="container">
+                <h2>Process</h2>
+                <ul>
+                    <li>Research Translation: We first analyzed the 2012 CRISPR-Cas9 study to extract core concepts. 
+                        Then we were able to simplified these into actionable gameplay elements.</li>
+                    <li>Concept Development: We started designing and sketching a game framework that gamifies academic 
+                        findings while maintaining scientific integrity.</li>
+                    <li>Game Creation: We developed the DNA generation system and PAM recognition mechanics, 
+                        and built the game environment.</li>
+                    <li>Testing & Refinement: We conducted user tests to balance educational content with engaging gameplay. 
+                        This made it possible to adjust visuals, features, and mechanics based on their feedback.</li>
+                    <li>Deployment: We published the game on Itch.io for accessibility and feedback.</li>
+                    
+                </ul>
+             
+            </div>
+        </section>
+
+        <section class="reflection">
+            <div class="container">
+            <h2>Reflection</h2>
+            <p>Developing the CRISPR Cas9 Game was an eye-opening experience in how gamification can be used to simplify and disseminate complex scientific ideas. By focusing on educational clarity, we created an engaging tool that helps players understand the CRISPR-Cas9 mechanism without requiring prior knowledge.
+                Balancing gameplay and scientific accuracy was a challenge. While adding elements like enemies or advanced features could have made the game more entertaining, we prioritized simplicity to ensure the educational goal remained clear.
+                User feedback was overwhelmingly positive, with many noting how the game helped them visualize the science behind CRISPR-Cas9.</p>
+            
+            <p>This project deepened my skills in game design, research translation, and the application of
+                 gamification to science communication. It also highlighted the potential of games to make academic 
+                 research more accessible and engaging.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Yanna Smid. All rights reserved.</p>
+    </footer>
+
+    <script src="hamburger.js"></script>
+    <script src="slider.js"></script>
+</body>
+</html>

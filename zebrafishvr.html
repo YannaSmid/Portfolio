@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Anatomy in VR</title>
+    <link rel="stylesheet" href="projectstyle.css">
+</head>
+<body>
+    <!-- Navbar Section -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">MyPortfolio</div>
+            <button class="hamburger" aria-label="Toggle navigation">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero" style="background-image: url('images/Pokemon/MT.jpg');">
+        <div class = "overlay"></div>
+        <div class="hero-text">
+            <h1>Anatomy in VR</h1>
+            <p>Explore the anatomy of a zebrafish in Virtual Reality.</p>
+        </div>
+    </div>
+
+    <main>
+        <!-- Overview Section -->
+        <section class="contributors">
+            <h>
+                By Yanna Smid and Nikki Rademaker
+            </h>
+        </section>
+        <section class="project-overview">
+            <div class="container">
+                <h2>Project Overview</h2>
+                <p>
+                    For my thesis, I explored the intersection of Virtual Reality (VR) and anatomical education by developing an 
+                    immersive VR application. The project aimed to enhance the learning process of anatomy by visualizing a 3D ontology
+                     system and applying gamification principles. This project showcases how VR can be an effective tool for scientific 
+                     visualization, offering an engaging and interactive platform for life science research.
+                </p>
+                <p>
+                    With this project, we aimed to develop a VR environment that visualizes the anatomy of a zebrafish embryo, 
+                    integrating a 3D ontology to organize and present anatomical hierarchy interactively. By incorporating gamification 
+                    elements, the project aimed to create a more engaging and effective learning experience. Additionally, the usability 
+                    and effectiveness of the application were evaluated through comprehensive user studies, which included direct observations
+                     and detailed surveys.
+                </p>
+                
+            </div>
+        </section>
+
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 8</div>
+              <img src="images/ZebrafishVR/hunt.png">
+              <div class="text">Search a specific anatomical part in this scavenger hunt.</div>
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 8</div>
+              <img src="images/ZebrafishVR/quiz.png" >
+              <div class="text">Test your knowledge with a quiz about the anatomical structure.</div>
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 8</div>
+              <img src="images/ZebrafishVR/puzzle.png" ">
+              <div class="text">Fit the anatomical pieces back together in the puzzle game.</div>
+            </div>
+
+          
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+          
+          <!-- The dots/circles -->
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+    
+
+        <!-- Features Section -->
+        <section class="Key Features">
+            <div class="container">
+                <h2>Key Features</h2>
+                <ul>
+                    <li>Interactive Design: Users can interact with an ontology to view the anatomical hierarchy of a zebrafish embryo.</li>
+                    <li>Games: Three mini games are implemented in the VR application for a more engaging and fun learning experience.</li>
+                    <li>Learnability: The anatomical data in the 3D environment is presented in a clear and structured way, 
+                        such that the user will be able to learn the hierarchical structure behind it.</li>
+                </ul>
+                <img src="images/ZebrafishVR/ontology_finalversion.JPG" alt="Interface" class="project-image">
+            </div>
+        </section>
+
+        <section class="Process">
+            <div class="container">
+                <h2>Process</h2>
+                <ul>
+                    <li>Conceptualization: The project began with identifying the need for innovative methods in anatomical education, 
+                        focusing on VR's potential to offer immersive and interactive experiences. Zebrafish embryos were selected as 
+                        the model organism due to their relevance in life science research and developmental biology.</li>
+                    <li>Sketching: To transform the concept into a visualization we made sketches to get a clear view of what we wanted 
+                        to aim for. The anatomy of the zebrafish was organized into a 3D ontology to provide structured, accessible information. 
+                        Three games were designed to reinforce key concepts, ensuring the application was both educational and engaging.</li>
+                    <li>Data cleaning: Before the anatomical data could be used, it had to be preprocessed first. 
+                        This was done by editing the text data manually, and restructuring the models by hand.</li>
+                    <li>Algorithm Development: For the ontology visualization an algorithm was written to structure the anatomical data. </li>
+                    <li>VR environment: The VR application was programmed using Unity. The ontology was implemented to allow users to explore
+                         anatomical parts in detail, and the games were designed to study the anatomy in a more engaging way.</li>
+                    <li>Testing and Fine-Tuning: User evaluations were conducted with participants from diverse backgrounds. Observations during 
+                        gameplay and post-study questionnaires provided valuable insights into usability and learning outcomes. Iterative refinements 
+                        were made based on feedback, ensuring the program was intuitive and effective.</li>
+                    <li>Results presentation: The findings of this research were presented in a scientific paper and for the Thesis presentation.</li>
+                </ul>
+                
+            </div>
+        </section>
+
+
+        <!-- Technical Details Section -->
+        <section class="technical-details">
+            <div class="container">
+                <h2>Technical Details</h2>
+               The main VR program was implemented in Unity, for a good and straightforward connection to HTC Vive controls. For the full process, several other technilogical systems were needed.
+                <ul>
+                    <li>
+                        Python was needed to clean the anatomical text data.
+                    </li>
+                    <li>
+                        The HTC Vive VR set was needed for the application to run.
+                    </li>
+                    <li>
+                        A stable PC with a strong graphics card was needed to run the Unity program.
+                    </li>
+                    <li>Anatomical data in .json format is necesarry for the ontology visualization.
+                    </li>
+                    <li>3D objects for each anatomical part is needed.</li>
+                </ul>
+
+            </div>
+        </section>
+
+        <!-- Challenges Section -->
+        <section class="challenges">
+            <div class="container">
+                <h2>Challenges</h2>
+               <ul>
+                <p> We encountered several difficulties throughout the process of this research. F
+                    or an optimal VR experience, space is limited in 3D environments. With big data sets such as anatomical data, 
+                    visualizing all data can give a more chaotic VR environment. We proposed a method to only visualize one layer at a time 
+                    to reduce this issue. However, with bigger data sets, layers will include more child objects.
+                    Moreover, in VR the quality of the 3D objects is very important for the optimal learning experience. 
+                    The objects we used were polished to make it as smooth as possible. </p>
+               
+                </ul>
+            </div>
+        </section>
+
+       
+
+        <section class="reflection">
+            <div class="container">
+            <h2>Reflection</h2>
+            <p>With this project, we highlighted the potential of VR in educational settings. By integrating scientific accuracy 
+                with interactive design, we were able to create a tool that not only teaches anatomy but also engages users in an 
+                immersive learning experience The user feedback validated the effectiveness of this approach, and the lessons learned 
+                from this project will inform my future endeavors in technology-driven education and research.</p>
+            </div>
+
+            <video src="images/ZebrafishVR/demonstration.mp4" alt="Interface" class="project-image" >
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Yanna Smid. All rights reserved.</p>
+    </footer>
+
+    <script src="hamburger.js"></script>
+    <script src="slider.js"></script>
+</body>
+</html>

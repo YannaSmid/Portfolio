@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RL in Games</title>
+    <link rel="stylesheet" href="projectstyle.css">
+</head>
+<body>
+    <!-- Navbar Section -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">MyPortfolio</div>
+            <button class="hamburger" aria-label="Toggle navigation">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero" style="background-image: url('images/ITRL/Type1_qlearning.png'); background-position: 0% 80%;">
+        <div class = "overlay"></div>
+        <div class="hero-text">
+            <h1>Strategy Game AI</h1>
+            <p>Using RL in a Game Environment.</p>
+        </div>
+    </div>
+
+    <main>
+        <!-- Overview Section -->
+        <section class="contributors">
+            <h>
+                By Yanna Smid and Amarise Silié
+            </h>
+        </section>
+        <section class="project-overview">
+            <div class="container">
+                <h2>Project Overview</h2>
+                <p>
+                    <span class="purple-text">Strategy Video Games</span> require a lot of tactical skills and thinking, which keeps the game interesting. 
+                    After a while, playing a strategy game can become less challenging once you have found your ideal strategy that 
+                    is able to solve all maps. But what about an artificial agent? Is the ideal strategy findable through <span class="purple-text">Reinforcement Learning (RL)</span>, 
+                    and how does the path finding evolve over time? 
+                </p>
+                <p>
+                    In RL, the goal of an agent is to determine an optimal policy for interacting with its 
+                    environment. Together with my dear teammate Amarise Silié, I wanted to apply this to one of our favorite 
+                    strategy games called Fire Emblem. This project explored Temporal Difference (TD) learning, 
+                    a model-free approach, through the implementation and analysis of two key algorithms: 
+                    Q-learning and Expected SARSA. Both were applied to navigate and strategize in a simplified 
+                    version of a map from the mobile game Fire Emblem Heroes, investigating their behaviors in two distinct 
+                    game environments.
+                </p>
+                
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="Key Features">
+            <div class="container">
+                <h2>Features</h2>
+                <ul>
+                    <li>Pathfinding Behavior: Analyzed the paths taken by an infantry unit in environments with constraints.
+                         The environment can contain mountains which blocks infantry units, and forest which slows down horse units. </li>
+                    <li>Algorithm Performance Across Unit Types: Studied how unit types (infantry, heavy armor, horse, flyer) perform under each algorithm. Metrics included average reward and convergence rates.
+                        </li>
+                    <li>Impact of Reward Values: Investigated how varying reward structures affect the agent's behavior and time to complete the game level.
+                        </li>
+                    
+                </ul>
+                
+            </div>
+        </section>
+
+
+        <!-- Technical Details Section -->
+        <section class="technical-details">
+            <div class="container">
+                <h2>Technical Details</h2>
+                <p> For the course Reinforcement Learning we focused on experimental design, and implemented code to visualize the learning velocity of the agents. 
+                    An agent represents 
+                </p>
+                <ul>
+                    <li>
+                        Algorithms: Q-learning (off-policy) and Expected SARSA (on-policy) implemented with Python.
+                    </li>
+                    <li>
+                        Game Environment: We transformed the strategic gameplay of the regular game into a simplified version with
+                         dynamic movement and attack rules. Agents must navigate terrain types (grass, forest, and mountains) with 
+                         unique constraints for each unit type (infantry, heavy armor, horse, flyer). Only one enemy and one player is 
+                         present on the map.
+                    </li>
+                    <li>
+                        Objective: Eliminate the enemy while maximizing rewards and minimizing penalties.
+                    </li>
+                    <li>
+                        Challenges: Movement limitations, terrain penalties, and 
+                        strategic interactions such as counter-attacks.
+                    </li>
+                </ul>
+
+            </div>
+        </section>
+
+        <!-- Future Work Section -->
+        <section class="Process">
+            <div class="container">
+                <h2>Process</h2>
+                <ul>
+                    <li>Conceptualization: We had to come with our own topic that we could apply some type of Reinforcement Learning algorithm on. 
+                        Amarise and I are both into playing strategy games and quickly got to the idea to use Reinforcement Learning for one of our 
+                        favorite strategy games.</li>
+                    <li>Defining objectives: Then we had to transform the regular game environment into something smaller to make 
+                        it more suitable within the scope of your Bachelor’s course assignment. We also defined a rule set for punishment and reward given for actions.</li>
+                    <li>Develop algorithm: With the defined objectives and the simplified mechanics of the game, we were able to transform
+                         this information into the code to make it usable for the RL algorithms. We developed a SARSA and Q-Learning algorithm to let the agent adapt in this environment and find the best way to defeat the enemy.</li>
+                    <li>Testing and finetuning: We conducted pilot tests to ensure the game functions as intended and aligns with research objectives.</li>
+                    <li>Experimenting: Then we let the algorithm run for multiple unit types to find the optimal path for each type.</li>
+                    <li>Result Visualization: We printed the results in performance graph charts that show the rewards and convergence rate 
+                        and printed the environmental states. We converted the environmental states to hand made sketches for a better visualization of the taken path.</li>
+                </ul>
+                
+            </div>
+        </section>
+
+        <section class="reflection">
+            <div class="container">
+            <h2>Reflection</h2>
+            <p>Reflecting on my experience I gained from this project, I realized how much I have learned from applying RL to games. 
+                This combination of two fields I am deeply passionate about has proven to me to be worth investigating, and to have a high potential 
+                for the game industry. Through this exploration, I have learned more about the concepts of RL, and expanded the boundaries of what's 
+                possible for strategy games. </p>
+                
+                <p>Working on this topic has allowed me to understand how AI can be applied to enhance gameplay mechanics, create more 
+                immersive environments, and enable dynamic, personalized experiences for players. Beyond technical skills, I have developed a s
+                harper analytical mindset and a deeper appreciation for how AI can transform interactive media. </p>
+
+                <p>These insights have motivated me to continue this work in the future. I am enthusiastic to explore this topic further as the foundation 
+                    for my thesis. I am excited about the prospect of contributing to the growing field of game AI, pushing the boundaries of what games can 
+                    achieve with AI technology, and uncovering new possibilities that can benefit both academia and the industry. </p>
+                
+                <p> This project has realized my belief that this path aligns with my interests, skills, and aspirations. 
+                    It motivates me to continue learning, experimenting, and contributing meaningfully to this fascinating domain. 
+                    For this reason, this project has set up my idea for my master's Thesis, where I want to apply RL for strategy games in an innovative ways
+                    to enhance the gaming experience.
+                </p>
+                <img src="images/ITRL/Type1_expsarsa.png" alt="Interface" class="project-image" width="50%">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Yanna Smid. All rights reserved.</p>
+    </footer>
+
+    <script src="hamburger.js"></script>
+    <script src="slider.js"></script>
+</body>
+</html>

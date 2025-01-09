@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navbar Section -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">MyPortfolio</div>
+            <button class="hamburger" aria-label="Toggle navigation">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>  
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/photo_vr_me_drawing.jpg');">
+        <div class="hero-text">
+            <h1>Hi there! I'm <span class="purple-text">Yanna Smid</span></h1>
+            <p>I'm a Creative Technologist with a passion for Game Technology, AI, and Data Science.</p>
+            <a href="projects.html" class="btn">View My Work</a>
+        </div>
+   
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+   
+        <h2>About Me</h2>
+        
+        <p> Thank you for checking out my portfolio webpage! Here you can find all my professional information.
+            My name is Yanna Smid. In 2019 I started my bachelor's degree in <span class="purple-text">Bioinformatics</span> at Leiden University. 
+            Here I discovered my interest for programming and Data Science. After finishing my classes for Bioinformatics, I went to the Ohio State University where I further developed on my programming skills, and where I was able to use my interest in design and art.
+            I discovered that science and creativity are closely related to each other, and that often you need one for the other. This is exactly what fits my interests, and what I want to work with. 
+            Therefore, I started my Master's degree in <span class="purple-text">Media Technology</span> or now called <span class="purple-text">Creative Intelligence and Technology</span>. Here I was able to use my creativity for scientific research and Computer Science. 
+            This program offered me to enhance my knowledge in Computer Science and use it for creative aspects. 
+            I am honored to show you the pieces that I have made during my academic path so far, and I am excited for what is coming next!</p>
+
+ 
+    </section>
+
+    <hr class="solid">
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <h2>Highlights</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <div class="project-card-inner">
+                    <div class="project-card-front">
+                        <img src="images/taylor_lavender.jpg" alt="Lavender">
+                    </div>
+                    <div class="project-card-back">
+                        <p>Ever wondered what the benefits of VR could be on study efficiency? In this research, I made a VR application to study the anatomy of a zebrafish fetus.</p>
+                    </div>
+                </div>
+                <figcaption>Anatomy in VR</figcaption>
+            </div>
+    
+            <div class="project-card">
+                <div class="project-card-inner">
+                    <div class="project-card-front">
+                        <img src="images/taylor_midnight.jpg" alt="Midnight">
+                    </div>
+                    <div class="project-card-back">
+                        <p>In this project, I created an interface where you can generate a Pokémon using AI based on your preferences.</p>
+                    </div>
+                </div>
+                <figcaption>Gotta cAItch 'em all</figcaption>
+            </div>
+    
+            <div class="project-card">
+                <div class="project-card-inner">
+                    <div class="project-card-front">
+                        <img src="images/taylor_vigilante.jpg" alt="Vigilante">
+                    </div>
+                    <div class="project-card-back">
+                        <p>Can you find the treasure before the zombies catch up? Listen closely to your surroundings and avoid danger!</p>
+                    </div>
+                </div>
+                <figcaption>Treasure Tracker</figcaption>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <h2>Skills</h2>
+        <div class="skill-list">
+            <span>Python</span>
+            <span>C++</span>
+            <span>Unity</span>
+            <span>Java</span>
+            <span>PlugData</span>
+            <span>Arduino</span>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2>Contact Me</h2>
+        <form action="#">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Yanna Smid. All rights reserved.</p>
+    </footer>
+
+    <script src="hamburger.js"></script>
+</body>
+</html>

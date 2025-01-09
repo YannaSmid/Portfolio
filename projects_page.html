@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+</head>
+
+<body>
+
+<!-- MAIN (Center website) -->
+
+  <!-- Navbar Section -->
+  <header>
+    <nav class="navbar">
+        <div class="logo">MyPortfolio</div>
+        <button class="hamburger" aria-label="Toggle navigation">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>  
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="projects_page.html">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </button>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="projects_page.html">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+ <!-- Hero Section -->
+<div class="hero" id="home" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/taylor_headframe.jpg');">
+    <div class="hero-text">
+        <h1>Welcome to my <span class="purple-text">Projects</span> section</h1>
+    </div>
+</div>
+
+<section class="projects" >
+    <h2>Projects</h2>
+        <!-- Control buttons -->
+        <div class="filter-options" id="filter-buttons">
+            <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+            <button class="btn" onclick="filterSelection('Year1')"> Year 1</button>
+            <button class="btn" onclick="filterSelection('Year2')"> Year 2</button>
+        </div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column Year1">
+    <div class="content">
+        <div class="project-card">
+            <div class="project-card-inner">
+                <div class="project-card-front">
+                    <img src="images/taylor_lavender.jpg" alt="Lavender">
+                </div>
+                <div class="project-card-back">
+                    <p>Ever wondered what the benefits of VR could be on study efficiency? In this research, I made a VR application to study the anatomy of a zebrafish fetus.</p>
+                </div>
+            </div>
+        </div>
+      <h4>Lavender</h4>
+    </div>
+  </div>
+
+  <div class="column Year2">
+    <div class="content">
+        <div class="project-card">
+            <div class="project-card-inner">
+                <div class="project-card-front">
+                    <img src="images/taylor_midnight.jpg" alt="Midnight">
+                </div>
+                <div class="project-card-back">
+                    <p>In this project, I created an interface where you can generate a Pokémon using AI based on your preferences.</p>
+                </div>
+            </div>
+        </div>
+      <h4>Gotta cAItch 'em all</h4>
+    </div>
+  </div>
+  
+  <div class="column Year1">
+    <div class="content">
+        <div class="project-card">
+            <div class="project-card-inner">
+                <div class="project-card-front">
+                    <img src="images/taylor_vigilante.jpg" alt="Vigilante">
+                </div>
+                <div class="project-card-back">
+                    <p>Can you find the treasure before the zombies catch up? Listen closely to your surroundings and avoid danger!</p>
+                </div>
+            </div>
+        </div>  
+      <h4>Treasure Hunt</h4>
+    </div>
+  </div>
+
+  <div class="column Year2">
+    <div class="content">
+        <div class="project-card">
+            <div class="project-card-inner">
+                <div class="project-card-front">
+                    <img src="images/taylor_goldfish.jpg" alt="Goldfish">
+                </div>
+                <div class="project-card-back">
+                    <p>And I'll write your name!</p>
+                </div>
+            </div>
+        </div>  
+      <h4>I got a ___</h4>
+    </div>
+  </div>
+
+  <div class="column Year2">
+    <div class="content">
+        <div class="project-card">
+            <div class="project-card-inner">
+                <div class="project-card-front">
+                    <img src="images/taylor_tsmwel.jpg" alt="tsmwel">
+                </div>
+                <div class="project-card-back">
+                    <p>WYSBS WWMD DYSWAGUOB WYWAB WYASSS IFYWATBD AYCWYDI AISGR CIWSOIWF IWHDFYS IIJDI YDPBYWGT YSTIASTTB YCMPAYRC YSNGAB BYWGBTM YKOTSLBYSP AIPSYH BYAWYD AIFGYBINF TSMWEL</p>
+                </div>
+            </div>
+        </div>  
+      <h4>GOOD RIDDANCE</h4>
+    </div>
+  </div>
+
+  <div class="column Year2">
+    <div class="content">
+        <div class="project-card">
+            <div class="project-card-inner">
+                <div class="project-card-front">
+                    <img src="images/taylor_ily.jpg" alt="ily">
+                </div>
+                <div class="project-card-back">
+                    <p>Love you Taylor</p>
+                </div>
+            </div>
+        </div>  
+        <h4>Taylor ily</h4>
+    </div>
+  </div>
+
+  <div class="column Year2">
+    <div class="content">
+        <div class="project-card">
+            <div class="project-card-inner">
+                <div class="project-card-front">
+                    <img src="images/taylor_ily.jpg" alt="ily">
+                </div>
+                <div class="project-card-back">
+                    <p>Love you Taylor</p>
+                </div>
+            </div>
+        </div>  
+        <h4>Taylor ily</h4>
+    </div>
+  </div>
+
+  <div class="column Year2">
+    <div class="content">
+        <div class="project-card">
+            <div class="project-card-inner">
+                <div class="project-card-front">
+                    <img src="images/taylor_ily.jpg" alt="ily">
+                </div>
+                <div class="project-card-back">
+                    <p>Love you Taylor</p>
+                </div>
+            </div>
+        </div>  
+        <h4>Taylor ily</h4>
+    </div>
+  </div>
+  
+  <div class="column Year2">
+    <div class="content">
+        <div class="project-card">
+            <div class="project-card-inner">
+                <div class="project-card-front">
+                    <img src="images/taylor_ily.jpg" alt="taytay">
+                </div>
+                <div class="project-card-back">
+                    <p>Love you Taylor</p>
+                </div>
+            </div>
+        </div>  
+        <h4>Taylor ily</h4>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+</section>
+
+<!-- END MAIN -->
+
+
+<script src="filter_script.js"></script>
+<script src="hamburger.js"></script>
+
+</body>
+</html>

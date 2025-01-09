@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pokemon AI Generator</title>
+    <link rel="stylesheet" href="projectstyle.css">
+</head>
+<body>
+    <!-- Navbar Section -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">MyPortfolio</div>
+            <button class="hamburger" aria-label="Toggle navigation">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero" style="background-image: url('images/Pokemon/MT.jpg');">
+        <div class = "overlay"></div>
+        <div class="hero-text">
+            <h1>Gotta cAItch 'em all!</h1>
+            <p>A co-creative system to discover new Pokémon.</p>
+        </div>
+    </div>
+
+    <main>
+        <!-- Overview Section -->
+        <section class="contributors">
+            <h>
+                Team Members: Nikki Rademaker, Christina Irakleous, Yanna Smid
+            </h>
+        </section>
+        <section class="project-overview">
+            <div class="container">
+                <h2>Project Overview</h2>
+                <p>
+                    The Pokémon franchise has captivated fans worldwide with its imaginative designs and iconic creatures. 
+                    Inspired by this legacy, our team developed a co-creative system that enables users to collaborate 
+                    with AI to design their own Pokémon. By combining user input with generative AI, the Pokémon Generator 
+                    turns creativity into reality, blending nostalgia with cutting-edge technology.
+                </p>
+                <p>
+                    For an assignment in Computational Creativity, we were challenged to build a co-creative system. 
+                    With our interest in Video Games, and nostalgia for Pokemon, we decided to create a co-creative interface 
+                    that can be used to design new pokémon. Users provide input on their preferred Pokémon (e.g., type, body form, 
+                    inspiration). Then AI generates a descriptive text and a visual representation of the Pokémon based on the input. 
+                    The process offers interactive and imaginative design experiences.
+                </p>
+                
+            </div>
+        </section>
+
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 8</div>
+              <img src="images/Pokemon/electkid.jpg">
+              <div class="text">Chargabun the Electric Fighting type Bunny Pokémon.</div>
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 8</div>
+              <img src="images/Pokemon/miffy.jpg" >
+              <div class="text">Miffinity the Psychic Normal type Pokémon that looks like Miffy.</div>
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 8</div>
+              <img src="images/Pokemon/erasquill.jpg" ">
+              <div class="text">Erasquill the Electric Psychic Pokémon inspired by the Era's tour from Taylor Swift.</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 8</div>
+                <img src="images/Pokemon/rockninja.jpg" ">
+                <div class="text">Noxidian the Dark and Rock type Pokémon.</div>
+              </div>
+
+              <div class="mySlides fade">
+                <div class="numbertext">5 / 8</div>
+                <img src="images/Pokemon/shadow.jpg"">
+                <div class="text">Flareclipse the Dark and Fire husky Pokémon.</div>
+              </div>
+
+              <div class="mySlides fade">
+                <div class="numbertext">6 / 8</div>
+                <img src="images/Pokemon/vis.jpg" ">
+                <div class="text">Toxreef the Poison Water shark Pokémon.</div>
+              </div>
+
+              <div class="mySlides fade">
+                <div class="numbertext">7 / 8</div>
+                <img src="images/Pokemon/aquaspect.jpg" ">
+                <div class="text">Aquaspect the Water Ghost Pokémon.</div>
+              </div>
+
+              <div class="mySlides fade">
+                <div class="numbertext">8 / 8</div>
+                <img src="images/Pokemon/fairyfox.jpg" ">
+                <div class="text">Pixilume the Fairy Electric type pixie Pokémon.</div>
+              </div>
+          
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+          
+          <!-- The dots/circles -->
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+            <span class="dot" onclick="currentSlide(8)"></span>
+          </div>
+    
+
+        <!-- Features Section -->
+        <section class="Key Features">
+            <div class="container">
+                <h2>Features</h2>
+                <ul>
+                    <li>Interactive Design: Users can select the Pokémon type(s), 
+                        body shape, and additional requirements via a simple interface.</li>
+                    <li>Generated description: AI generates a detailed textual description of the Pokémon using GPT-3.5-Turbo</li>
+                    <li>Generated visuals: DALL-E 3 transforms the description into a high-quality Pokémon image.</li>
+                </ul>
+                <img src="images/Pokemon/interface.png" alt="Interface" class="project-image">
+                <img src="images/Pokemon/selected_interface.png" alt="Interface" class="project-image">
+                <img src="images/Pokemon/result_interface.png" alt="Interface" class="project-image">
+            </div>
+        </section>
+
+
+        <!-- Technical Details Section -->
+        <section class="technical-details">
+            <div class="container">
+                <h2>Technical Details</h2>
+                <p>The system collects user preferences through the interface built in Python Tkinter. 
+                    Then GPT-3.5-Turbo produces a Pokémon description based on the input, and DALL-E 3 creates a corresponding visual representation.
+                    The generated Pokémon description and image are presented together on the interface screen.
+                </p>
+                <ul>
+                    <li>
+                        Python and Tkinter are used for the interface and application.
+                    </li>
+                    <li>
+                        The OpenAI API is used for text and image generation.
+                    </li>
+                </ul>
+
+            </div>
+        </section>
+
+        <!-- Challenges Section -->
+        <section class="challenges">
+            <div class="container">
+                <h2>Challenges</h2>
+               <ul>
+                <li> A right prompt had to be found to let the OpenAI create Pokémon of high quality. 
+                    With some Pokémon types such as Dragon and Fairy type, the created images were more fitting for 
+                    fantasy fiction rather than in the world of anime.</li>
+                <li>However, the variability in output quality led to iterative improvements in the system prompts. 
+                    In the end, we found a prompt most suitable for the task of a Pokémon generator.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Future Work Section -->
+        <section class="Process">
+            <div class="container">
+                <h2>Process</h2>
+                <ul>
+                    <li>Conceptualization: In the process of coming up with a topuc for a co-creative 
+                        system we quickly applied our interest in Video Game creation and our interest 
+                        for a tool to design new Pokémon. </li>
+                    <li>Sketches: We started making sketches of a good interface, keeping it as simple and 
+                        straightforward as possible. </li>
+                    <li>Programming: We then implemented the interface and the generative backend for text and visuals.</li>
+                    <li>Optimization: Through multiple test cases we were able to refine prompts for 
+                        GPT-3.5-Turbo and DALL-E 3, to receive images most suitable to the user’s description</li>
+                    <li>Evaluation: We let users test the final interface to investigate the creativity 
+                        of the system based on Standardized Procedure for Evaluating Creative Systems (SPECS) 
+                        of Jordanous, and let them complete a Turing test.</li>
+                </ul>
+                
+            </div>
+        </section>
+
+        <section class="reflection">
+            <div class="container">
+            <h2>Reflection</h2>
+            <p>Reflecting on this project, we feel honored to have gotten the opportunity to combine our
+                 passion for programming and AI with our interest in Pokémon and Video Games. The Pokemon 
+                 Generator shows the power of AI in creative domains, enabling users to participate in designing 
+                 entirely new designs of Pokémon. By merging user preferences with generative AI, the project opened 
+                 doors to limitless creative possibilities for personal use.</p>
+            </div>
+
+            <img src="images/Pokemon/felitox.jpg" alt="Interface" class="project-image" >
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Yanna Smid. All rights reserved.</p>
+    </footer>
+
+    <script src="hamburger.js"></script>
+    <script src="slider.js"></script>
+</body>
+</html>

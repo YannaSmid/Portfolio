@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TS Poem Generator</title>
+    <link rel="stylesheet" href="projectstyle.css">
+</head>
+<body>
+    <!-- Navbar Section -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">MyPortfolio</div>
+            <button class="hamburger" aria-label="Toggle navigation">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero" style="background-image: url('images/taylor_headframe2.jpg'); background-position: 20% 50%;">
+        <div class = "overlay"></div>
+        <div class="hero-text">
+            <h1>Poetic Taybot</h1>
+            <p>Computational Creativity in Poem Generation.</p>
+        </div>
+    </div>
+
+    <main>
+        <!-- Overview Section -->
+        <section class="contributors">
+            <h>
+                Team Members: Nikki Rademaker, Christina Irakleous, Trent Eriksen, Yanna Smid
+            </h>
+        </section>
+        <section class="project-overview">
+            <div class="container">
+                <h2>Project Overview</h2>
+                <p>
+                    Poetry is an art form that bridges emotion and creativity, but creating it can be a difficult task that 
+                    requires mastery of language and sensitivity. Inspired by Taylor Swift’s poetic songwriting, our team developed 
+                    Poetic Taybot, an artificial poetry generator that uses Taylor Swift's lyrics as its muse. 
+                </p>
+                <p>This project, completed for the course Computational Creativity, combined linguistic algorithms with
+                     generative AI to create, present, and perform original poems in innovative ways.
+                    The aim was to build a poetry generator using a Markov Chain algorithm trained on Taylor Swift's lyrics and to 
+                    visualize and present three generated poems creatively using AI-generated voice, music, and art.
+                </p>
+                
+            </div>
+        </section>
+
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 5</div>
+              <img src="images/TayPoems/poem1.png">
+          
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 5</div>
+              <img src="images/TayPoems/poem2.png" >
+             
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 5</div>
+              <img src="images/TayPoems/poem3.png" ">
+            
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 5</div>
+                <img src="images/TayPoems/poem4.png" ">
+              
+              </div>
+
+              <div class="mySlides fade">
+                <div class="numbertext">5 / 5</div>
+                <img src="images/TayPoems/poem5.png"">
+          
+              </div>
+
+
+          
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+          
+          <!-- The dots/circles -->
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+          </div>
+    
+
+        <!-- Features Section -->
+        <section class="Key Features">
+            <div class="container">
+                <h2>Features</h2>
+                <ul>
+                    <li>Poetry Generation: The lyrics from Taylor Swift’s complete discography, including From the Vault tracks, were cleaned and formatted to serve as training data.
+                        We implemented a Markov Chain algorithm to generate poetic verses with attention to Taylor’s stylistic elements, such as alliteration and similes.
+                        </li>
+                    <li>Creative Visualization: Selected poems were narrated through an AI voice synthesizer that mimicked Taylor Swift’s vocal tone and nuance.
+                        A MIDI composition was created with the use of AI, that was inspired by beat poetry and Taylor Swift’s themes.
+                        Lastly, AI art was generated to visualize the mood and tone of each poem.
+                        </li>
+                    <li>Final Presentation: A short video was integrated, showing the poems with visuals, music, and narration for an immersive experience.</li>
+           
+                </ul>
+                
+            </div>
+        </section>
+
+
+        <!-- Technical Details Section -->
+        <section class="technical-details">
+            <div class="container">
+                <h2>Technical Details</h2>
+                <p>For the creation of the visualization of the poems a few key technicalities were used: 
+                </p>
+                <ul>
+                    <li>
+                        Data Cleaning: Lyrical data was preprocessed by converting text to lowercases, removing special 
+                        characters such as apostrophes, and standardizing contractions and grammatical forms.
+                        
+                    </li>Algorithm: A Markov Chain algorithm was used to pair each word with its subsequent word based on likelihood, generating sentences word by word.
+                    We incorporated fallback mechanisms for unmatched words, and emphasized selecting alliterative options to align with Taylor’s style.
+                    
+                    <li>
+                        Generative tools: Generetive AI tools were used for the narration, music, and art. ElevenLabs for voice synthesis.
+                        Magenta for MIDI generation, processed in Ableton Live 11. AI art generator created accompanying visuals.
+                    </li>
+                </ul>
+
+            </div>
+        </section>
+
+
+        <!-- Future Work Section -->
+        <section class="Process">
+            <div class="container">
+                <h2>Process</h2>
+                <ul>
+                    <li>Concept Development: Drew inspiration from Taylor Swift’s lyrical style and subtle poetic undertone. 
+                        Therefore, we quickly agreed to base our generator on her lyrics. </li>
+                    <li>Data collection: By that time Taylor Swift had released nine albums, and three rerecorded albums. We collected 
+                        all her lyrics for these albums from the Genius lyrics, and converted it to txt and csv files.  </li>
+                    <li>Data preprocessing: The data consisted of raw texts, meaning that noise and unwanted characters were included. 
+                        This was cleaned out to make the lyrics fully useable for poem generations.</li>
+                    <li>Algorithm Implementation: We implemented a Markov Chain algorithm in Python to generate short poems 
+                        of 5 lines with each no more than 60 characters. We personalised the algorithm to include alliterations.</li>
+                    <li>Generative Experiments: We tested algorithm and finetuned the hyperparameters such as poem length and maximum words on each line. </li>
+                    <li>Integration: Three poems were selected to visualize. We combined audio, visual, and textual elements into a cohesive multimedia presentation.</li>
+                </ul>
+                
+            </div>
+        </section>
+
+        <section class="reflection">
+            <div class="container">
+            <h2>Reflection</h2>
+            <p>The Poetic Taybot project demonstrated how computational techniques could amplify creativity and 
+                reflect emotional responses. The collaboration of algorithmic precision and artistic interpretation opened up 
+                the way for innovative poetic storytelling. In the end, Poetic Taybot generated poems that blended Taylor Swift’s 
+                lyrical elegance with the unpredictability of AI creativity. The final video presentation captivated 
+                the audience by delivering a multidimensional artistic experience that highlighted:
+                 </p>
+                 <li> The emotional resonance of Taylor’s lyrics. </li>
+                 <li> The creative potential of generative AI in computational artist </li>
+
+                 <video src="images/TayPoems/poemvid.mp4" width="100%"  controls></video>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Yanna Smid. All rights reserved.</p>
+    </footer>
+
+    <script src="hamburger.js"></script>
+    <script src="slider.js"></script>
+</body>
+</html>

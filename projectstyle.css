@@ -1,0 +1,394 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #e5e5f3;
+    color: #1e1e2f;
+}
+
+header {
+    background-color: #1e1e2f;
+    padding: 20px 0;
+    width: 100%;
+    height: 12vh;
+    overflow: visible;
+}
+/* Hero Section */
+.hero {
+    
+    height: 38vh; /* Adjust height as necessary */
+    max-height: 450px;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+    text-align: center;
+    position: relative;
+    background-size: cover;
+    background-position: 50% 20%;
+    background-repeat: no-repeat;
+
+    border-bottom-style: solid;
+    border-color: #5f3db5;
+    border-radius: 2px;
+
+    overflow: hidden;
+    
+}
+.hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+    
+}
+
+.hero-text{
+    position: relative;
+    z-index: 2;
+}
+
+.hero-text h1 {
+    font-size: 38px;
+    z-index: 2;
+}
+
+.hero-text p {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.hero-text .purple-text {
+    color: #8c5bff;
+}
+
+.hero img{
+    border-bottom-style: solid;
+    border-color: #5f3db5;
+    border-radius: 2px;
+    
+}
+
+
+/* Default Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    max-height: 80%;
+    margin: 0 auto;
+    padding: 0 20px;
+    background-color: #1e1e2f; /* Ensure navbar visibility */
+    
+}
+
+.logo {
+    font-size: 24px;
+    color: #fff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex; /* Default for larger screens */
+    padding: 1rem;
+}
+
+/* Links Styling */
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links li a {
+    color: #fff; /* White text for links */
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.nav-links li a:hover {
+    background-color: #9b5bc1;
+    color: #fff;
+}
+
+/* Hamburger Menu Hidden by Default */
+.hamburger {
+    display: none;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    /* Hide Navigation Links by Default */
+    .nav-links {
+        display: none; /* Initially hidden for mobile */
+        flex-direction: column; /* Stack links vertically */
+        position: absolute;
+        top: 60px; /* Adjust to match navbar height */
+        right: 10px;
+        background-color: #1e1e2f;
+        border-radius: 8px;
+        padding: 1rem;
+        z-index: 1000;
+    }
+
+    /* Show Navigation Links When Active */
+    .nav-links.active {
+        display: flex; /* Make links visible */
+        list-style-type: none;
+        
+    }
+    .nav-links li {
+        margin: 10px 0; /* Adds vertical spacing between items */
+    }
+    
+    .nav-links li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 16px;
+        padding: 10px 20px; /* Increase horizontal and vertical padding */
+        border-radius: 5px;
+    }
+
+    
+    /* Hamburger Menu Styling */
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        cursor: pointer;
+        background: none;
+        border: none;
+    }
+
+    .hamburger .line {
+        width: 25px;
+        height: 3px;
+        background: #ffffff;
+    }
+}
+
+.content-box {
+    padding: 20px;
+    position: center;
+    background-color: #e5e5f3;
+    border: 2px solid #5f3db5;
+    height: 100%;
+    column-width: 100%;
+  }
+
+
+.btn {
+    background-color: #5f3db5;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #9b5bc1;
+}
+
+.btn.active {
+    background-color: #9b5bc1;
+    color: white;
+  }
+
+
+main {
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+
+}
+
+.container .purple-text {
+    color: #5f3db5;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+li {
+    text-align: left;
+}
+
+ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.contributors {
+    position: relative;
+    top: 0; /* Aligns the element to the top of the container */
+    right: 0;
+    padding: 10px;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    min-width: 20%;
+}
+
+.contributors h {
+    color: #212137b7;
+    font-weight: bold;
+    font-size: small;
+}
+
+.project-image {
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Slider Section */
+/* Slideshow container */
+.slideshow-container {
+    width: 500px;
+    max-width: 60vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    overflow: hidden;
+    
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    /* width: 400px;
+    height: 400px; */
+    max-width: 50vw;
+    max-height: 60vh; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    position: relative;
+    overflow: hidden;
+  }
+
+  .mySlides img {
+    /* width: 400px;
+    height: 400px; */
+    width: 100%;
+    max-width: 50vw; 
+    max-height: 60vh; 
+    margin: auto;
+    object-fit: contain; 
+}
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    margin-top: -22px;
+    padding: 16px;
+    color: #1e1e2f;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: #ffffff88;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 0 3px 3px 0;
+  }
+
+  .prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: #9c5bc1a2;
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+    background-color: #1e1e2f89;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #000000;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+   
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+

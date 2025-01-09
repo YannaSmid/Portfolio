@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Greg the Egg</title>
+    <link rel="stylesheet" href="projectstyle.css">
+</head>
+<body>
+    <!-- Navbar Section -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">MyPortfolio</div>
+            <button class="hamburger" aria-label="Toggle navigation">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero" style="background-image: url('images/Gregg/greggbanner.jpg'); background-position: 0% 80%;">
+        <div class = "overlay"></div>
+        <div class="hero-text">
+            <h1>Greg the Egg</h1>
+            <p>A gregarious artificial creature.</p>
+        </div>
+    </div>
+
+    <main>
+        <!-- Overview Section -->
+        <section class="contributors">
+            <h>
+                By Reyhan Danisan, Nikki Rademaker, and Yanna Smid
+            </h>
+        </section>
+        <section class="project-overview">
+            <div class="container">
+                <h2>Project Overview</h2>
+                <p>
+                    Meet Greg the Egg! A fluffy, pink creature with a playful personality and a need for 
+                    constant interaction. Greg's personal playground is where he thrives, enjoying swings, 
+                    merry-go-rounds, and seesaws. Greg’s charm lies in his ability to bring joy to anyone who 
+                    plays with him, and in his sadness when left alone.
+                </p>
+                <p>
+                    For the course Artificial Creatures, the challenge was to design and build a creature 
+                    with a distinct personality using Arduino and minimal additional features. Our team aimed 
+                    to create a lovable character that would connect emotionally with the audience.
+                </p>
+                
+            </div>
+        </section>
+
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 6</div>
+              <img src="images/Gregg/gregg1.jpeg">
+          
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 6</div>
+              <img src="images/Gregg/gregg2.jpg" >
+             
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 6</div>
+              <img src="images/Gregg/gregg3.jpg" ">
+            
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 6</div>
+                <img src="images/Gregg/gregg4.jpg" ">
+              
+              </div>
+
+              <div class="mySlides fade">
+                <div class="numbertext">5 / 6</div>
+                <img src="images/Gregg/gregg5.jpg"">
+          
+              </div>
+
+              <div class="mySlides fade">
+                <div class="numbertext">6 / 6</div>
+                <img src="images/Gregg/gregg6.jpg" ">
+        
+              </div>
+
+          
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+          
+          <!-- The dots/circles -->
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+          </div>
+    
+
+        <!-- Features Section -->
+        <section class="Key Features">
+            <div class="container">
+                <h2>Features</h2>
+                <ul>
+                    <li>Interactive Behavior: Greg detects movement via an accelerometer, 
+                        responding emotionally to interaction or lack thereof.</li>
+                    <li>Physical Design: Soft pink yarn over a delicate eggshell, making Greg both cute and fragile.
+                        </li>
+                    <li>Playground: A handmade swing, seesaw, and merry-go-round built to perfectly fit Greg.</li>
+                    <li>Emotion Simulation: Greg “cries” when left alone for too long, emphasizing his need for companionship.</li>
+                </ul>
+                
+            </div>
+        </section>
+
+
+        <!-- Technical Details Section -->
+        <section class="technical-details">
+            <div class="container">
+                <h2>Technical Details</h2>
+                <p>Greg the Egg's movements are detected through an accelerometer, that sends the data to the Arduino. The following materials were needed:
+                </p>
+                <ul>
+                    <li>
+                        Hardware: Arduino Nano, accelerometer, and wiring.
+                    </li>
+                    <li>
+                        Playground: Paint, paint stirring sticks, basket, hamster wheel, small easels, and green paper for the playground.
+                    </li>
+                </ul>
+
+            </div>
+        </section>
+
+        <!-- Challenges Section -->
+        <section class="challenges">
+            <div class="container">
+                <h2>Challenges</h2>
+               <ul>
+                <li>Letting Arduino process and produce sounds is a more difficult task than anticipated. Arduino can only produce beeping sounds, with a low volume.</li>
+                <li> In the end, we managed to come up with two distinct beeping rhythms that can be recognized as happy and sad.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Future Work Section -->
+        <section class="Process">
+            <div class="container">
+                <h2>Process</h2>
+                <ul>
+                    <li>Ideation: The first two weeks we brainstormed about ways to create a creature that emotionally connects with users. </li>
+                    <li>Prototyping: After coming up with the idea of making a gregarious creature, we started sketching the design of the creature.  </li>
+                    <li>Development: When fully agreeing on the design, we integrated Arduino Nano and sensors to bring Greg to life. Moreover, we started crafting the playground.</li>
+                    <li>Testing: When the first developments were done, we started testing the functions of Greg. We observed audience interaction to refine Greg’s responses.</li>
+                    <li>Finetuning: After testing, observed mistakes or malfunctions were corrected to prepare Greg for the final showdown. </li>
+                    <li>Exhibition: Finally, it was time to let Greg shine and we showcased him during an exhibition where audience was able to play with him and enjoy his creatureness.</li>
+                </ul>
+                
+            </div>
+        </section>
+
+        <section class="reflection">
+            <div class="container">
+            <h2>Reflection</h2>
+            <p>Greg the Egg highlights how creativity and technology can come together to evoke empathy and joy. 
+                The project reinforced the importance of designing with a user-centered and emotional perspective.
+                Audience enjoyed playing with Greg, and were personally affected when leaving him behind. </p>
+                <img src="images/Gregg/gregg_exhibit.jpeg" alt="Interface" class="project-image" width="50%">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Yanna Smid. All rights reserved.</p>
+    </footer>
+
+    <script src="hamburger.js"></script>
+    <script src="slider.js"></script>
+</body>
+</html>
