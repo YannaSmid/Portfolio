@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pacman Competition</title>
+    <link rel="stylesheet" href="projectstyle.css">
+</head>
+<body>
+    <!-- Navbar Section -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">MyPortfolio</div>
+            <button class="hamburger" aria-label="Toggle navigation">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero" style="background-image: url('images/Pacman/action.png'); background-position: 50% 50%;">
+        <div class = "overlay"></div>
+        <div class="hero-text">
+            <h1>Pacman Capture the Flag</h1>
+            <p></p>
+        </div>
+    </div>
+
+    <main>
+        <!-- Overview Section -->
+        <section class="contributors">
+            <h>
+                By Erik van der Jagt, Nikki Rademaker, and Yanna Smid
+            </h>
+        </section>
+        <section class="project-overview">
+            <div class="container">
+                <h2>Project Overview</h2>
+                <p>
+                    We never get enough of the retro classic game Pacman, and capture the flag is a fun extention to the classig.
+                    Here, the pacmen are thrown into a team-based arena,
+                    collecting food pellets from the opponent's side. The team that ends up with the most collected food pellets wins.
+                    
+                </p>
+                <p>In this project we designed a team of intelligent agents in Python that can play both offense and
+                     defense, switching roles when necessary. We tested various algorithms and techniques to setup an optimal
+                     agent in the end to participate in a tournament. In the end, we found that our heuristics agents worked better than 
+                     the famous MCTS agent.  
+                </p>
+               <img src="images/Pacman/action.png" alt="Interface" class="project-image" width="50%"> 
+            </div>
+        </section>
+
+
+    
+
+        <!-- Features Section -->
+        <section class="Key Features">
+            <div class="container">
+                <h2>Features</h2>
+                <ul>
+                    <li>
+                    <strong>MCTS Agent:</strong> We built an agent that closely follows the traditional Monte Carlo Tree Search 
+                    (MCTS) algorithm. At each step, it simulates multiple random gameplay rollouts to evaluate possible future outcomes.
+                     It then picks the move that leads to the best average result across all simulations.
+                    </li>
+                    <li>
+                        <strong>Defense Agent:</strong> This agent uses a set of heuristics to guard the border between the two
+                         sides. It stays positioned near the middle and becomes alert the moment an opponent crosses over. Once an 
+                         intruder is detected, the agent actively pursues them until they are caught.
+                    </li>
+                    <li>
+                        <strong>Offense Agent:</strong> This agent immediately crosses into the opponent's territory and focuses 
+                        entirely on collecting as many food pellets as possible, using heuristics to prioritize high-value paths
+                         and avoid threats.
+                    </li>
+                    <li>
+                        <strong>Combined Agent:</strong> Finally, we created an agent that blends both offensive and defensive 
+                        behavior. Instead of collecting food blindly, this agent aims to maintain a score advantage. It only crosses 
+                        into enemy territory when the team is behind, and returns to defense once the lead is regained.
+                    </li>
+
+
+                </ul>
+                
+            </div>
+        </section>
+
+
+        <!-- Technical Details Section -->
+        <section class="technical-details">
+            <div class="container">
+                <h2>Technical Details</h2>
+                <ul>
+                    <li>
+                        Programming: Python   
+                    </li>
+                    <li>
+                        Python project by John DeNero and Dan Klein from UC Berkely.
+                    </li>
+                </ul>
+
+            </div>
+        </section>
+
+
+        <!-- Future Work Section -->
+        <section class="reflection">
+            <div class="container">
+            <h2>Reflection</h2>
+            <p>With this project we demonstrated the design of intelligent, and adaptive agents that are capable of handling
+                 real-time strategy decisions. Both the application of MCTS and heuristic agents provided insights into effective 
+                 AI strategies for complex games. It really shows the possibilites of AI algorithms in classic retro games, to solve fun
+                 competitions. In the future, we would like to further adapt our agent to make it more offensive and aim for the win.
+                 <video src="images/Pacman/finalAgent.mp4" width="100%"  controls></video>
+            </div>
+        </section>
+
+        <section class="sources">
+            <div class=""container>
+                <h3>
+                    Sources
+                </h3>
+                <p>
+                    [1] Christian Shelton (cshelton). cshelton/pacman-ctf: Python3 version of UC Berkeley’s CS 188
+                        Pacman Capture the Flag project. GitHub: https://github.com/cshelton/pacman-ctf.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Yanna Smid. All rights reserved.</p>
+    </footer>
+
+    <script src="hamburger.js"></script>
+    <script src="slider.js"></script>
+</body>
+</html>

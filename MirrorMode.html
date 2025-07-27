@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mirror Mode: Your Biggest Enemy is Yourself </title>
+    <link rel="stylesheet" href="projectstyle.css">
+</head>
+<body>
+    <!-- Navbar Section -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">MyPortfolio</div>
+            <button class="hamburger" aria-label="Toggle navigation">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero" style="background-image: url('images/MirrorMode/My_FE_MirrorMode.png'); background-position: 50% 100%;">
+        <div class = "overlay"></div>
+        <div class="hero-text">
+            <h1>Mirror Mode: Your Biggest Enemy is Yourself</h1>
+            <p>Do you easily defeat enemy NPCs in Strategy Games? Try defeating them, when they have mirrored your strategy.</p>
+        </div>
+    </div>
+
+    <main>
+        <!-- Overview Section -->
+        <section class="contributors">
+            <h>
+                Master's Thesis by Yanna Smid
+            </h>
+        </section>
+        <section class="project-overview">
+            <div class="container">
+                <h2>Project Overview</h2>
+                <p>
+                    Strategy Video Games can get fairly easy after a playing it for a while, because the enemy agents do not improve their strategies 
+                    stay the same throughout the whole game. Eventhough the difficulty can be adjusted, research has shown that repetitive 
+                    and predictable gameplay can reduce a player's engagement to a video game.
+                    My thesis project, therefore, introduces a new game mode called Mirror Mode, where the enemy NPCs have imitated the player's strategies.
+                    Think you're good at the game? Let's see how you handle your own moves.
+                    
+                </p>
+                <p>The research built a simple strategy game from scratch in Unity Engine, based on Nintendo's Fire Emblem Heroes, developed by Intelligent Systems.
+                    A Standard Mode is built, where enemy NPCs follow the traditional AI heuristics, that results in a greedy behavior where an enemy
+                    always attacks if possible. In addition to this, the Mirror Mode is developped, where the enemy AI uses a model trained on player
+                    gameplay data collected through real-life player tests. Reinforcement Learning and Imitation Learning algorithms are used for this.
+                    The goal is to find a suitable model that can be applied to imitate player strategies, and to see if Mirror Mode has an effect on 
+                    the player's game experience.
+                </p>
+                
+            </div>
+        </section>
+
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 5</div>
+              <img src="images/MirrorMode/battle_el_lucy.png">
+          
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 5</div>
+              <img src="images/MirrorMode/My_FE_game_range_initiate_combat.png" >
+             
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 5</div>
+              <img src="images/MirrorMode/My_FE_MirrorMode.png" ">
+            
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 5</div>
+                <img src="images/MirrorMode/My_FE_game_range_attack_foe.png" ">
+              
+              </div>
+
+      
+
+
+          
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+          
+          <!-- The dots/circles -->
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+          </div>
+    
+
+        <!-- Features Section -->
+        <section class="Key Features">
+            <div class="container">
+                <h2>Features</h2>
+                <ul>
+                    <li>
+                        Gameplay: The game follows the basic rules from the original mobil stragey game Fire Emblem Heroes, by Nintendo and Intelligent Systems.
+                        The game is more simplified than the original game, excluding any assists, skills, or special attacks. This game 
+                        is purely based on the effectiveness of weapons, and unit stats. 
+                    </li>
+                    <li>Standard Mode: In Standard Mode, participants play against a traditional enemy AI, that follows heuristics to 
+                        decide their actions. During the game, state-action pairs from the player units are recorded every turn, and saved in a 
+                        demonstration file through Unity ML-Agent toolkit package. These demonstrations are important for training
+                        the Mirror models.
+                    </li>
+                    <li>Mirror Mode: After Standard Mode, participants are asked to play Mirror Mode. Here, the enemy AI uses models
+                        trained on player demonstrations through Imitation Learning. These models decide actions based on observed states.
+                        The enemy behavior therefore copies players strategies.
+
+                    </li>
+
+                </ul>
+                
+            </div>
+        </section>
+
+
+        <!-- Technical Details Section -->
+        <section class="technical-details">
+            <div class="container">
+                <h2>Technical Details</h2>
+                <ul>
+                    <li>
+                        Programming: Unity, C#   
+                    </li>
+                    <li>
+                        Unity ML-Agent package was used for the implementation and integration of ML algorithms in Python. 
+                        This was developed by A. Juliani et al.
+                    </li>
+                </ul>
+
+            </div>
+        </section>
+
+
+        <!-- Future Work Section -->
+        <section class="reflection">
+            <div class="container">
+            <h2>Reflection</h2>
+            <p>This research provides valuable insights to the experience of strategy games. For future work, it would be 
+                great to further develop models to enhance the imitation quality, and see if this has a bigger impact 
+                on game experience of players. There is still a long way to go to improve the adaptability of enemy NPCs,
+                but this research sets the first strategic step toward that direction.
+
+                 <video src="images/MiniGameTool/gameDesignTool.mp4" width="100%"  controls></video>
+            </div>
+        </section>
+
+        <section class="sources">
+            <div class=""container>
+                <h3>
+                    Sources
+                </h3>
+                <p>
+                    [1] Carey, J. L., Nader, N., Chai, P. R., Carreiro, S., Griswold, M. K., & Boyle, K. L. (2017). Drugs and Medical Devices: Adverse Events and the Impact on Women’s Health. Clinical Therapeutics, 39(1), 10–22. https://doi.org/10.1016/j.clinthera.2016.12.009
+                    
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Yanna Smid. All rights reserved.</p>
+    </footer>
+
+    <script src="hamburger.js"></script>
+    <script src="slider.js"></script>
+</body>
+</html>

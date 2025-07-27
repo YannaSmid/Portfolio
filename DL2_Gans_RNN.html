@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Generative Models and Sequence Modeling</title>
+    <link rel="stylesheet" href="projectstyle.css">
+</head>
+<body>
+    <!-- Navbar Section -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">MyPortfolio</div>
+            <button class="hamburger" aria-label="Toggle navigation">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero" style="background-image: url('images/taylor_vigilante.jpg'); background-position: 50% 100%;">
+        <div class = "overlay"></div>
+        <div class="hero-text">
+            <h1>Generative Models and Sequence Modeling</h1>
+            <p>Autoencoders draw. RNNs solve. AI evolves.</p>
+        </div>
+    </div>
+
+    <main>
+        <!-- Overview Section -->
+        <section class="contributors">
+            <h>
+                Megan Mirnalini Sundaram R, Sherry Usman, and Yanna Smid
+            </h>
+        </section>
+        <section class="project-overview">
+            <div class="container">
+                <h2>Project Overview</h2>
+                <p>
+                    Let's see how well Generative AI models create cat faces, and sequence models solve mathematical equations.
+                    This project explored different types of deep learning models for two distinct tasks. Generative models were
+                    trained for generating new cat. Moreover, arithmetic expressions were tried to be solved using Recurrent Neural Networks.
+                     We experimented with Autoencoders, GANs, and VAEs on the CAT dataset, and trained RNNs to interpret 
+                     and solve addition and subtraction problems using the MNIST dataset, in both text and image formats.
+                    
+                </p>
+
+                
+            </div>
+        </section>
+
+       
+    
+
+        <!-- Features Section -->
+        <section class="Key Features">
+            <div class="container">
+                <h2>Features</h2>
+                <ul>
+                    <li>
+                        Generative Models (CAE, VAE, GAN): We built and trained convolutional autoencoders (CAEs), variational autoencoders (VAEs), and GANs to 
+                        generate and interpolate realistic cat faces. Afterwards, we conducted an extensive 
+                        study on finetuning hyperparameters like batch size, latent dimensions, and filter sizes.
+                        We Performed latent space interpolation for smooth image morphing between cat images.
+                        In the end, the generated images results were looking very similar to each other, but were recognizable as cat faces.
+
+
+                    </li>
+                    <li>Recurrent Neural Networks (RNN): We developed three types of RNNs for solving arithmetic.
+                        First we trained a Text-to-Text RNN. The model received a mathematical sequence as string for an input, 
+                        and gives the solution as a string.
+                        We did the same for an Image-to-Text RNN. Here, the model receives an equation as an image from MNIST 
+                        digits. It then returns the solution as a string.
+                        Lastly, we tried creating a text to image model, that receives strings as an input and outputs the solution in an image.
+                    </li>
+    
+
+                </ul>
+                
+            </div>
+        </section>
+
+
+        <!-- Technical Details Section -->
+        <section class="technical-details">
+            <div class="container">
+                <h2>Technical Details</h2>
+                <ul>
+
+                    <li>
+                        Programming: Python, TensorFlow  
+                    </li>
+                    <li>
+                        Service: Google Collab
+                    </li>
+                    <li>
+                        Data: CAT dataset, MNIST handwritten digits
+                    </li>
+             
+                </ul>
+
+            </div>
+        </section>
+
+
+        <!-- Future Work Section -->
+        <section class="reflection">
+            <div class="container">
+            <h2>Reflection</h2>
+            <p>This project helped me get more practical experience with generative models and sequence-based neural networks. 
+                I learned that while VAEs offer more stable and interpretable results than GANs, they also come with computational 
+                challenges. Building and comparing different RNN architectures deepened my understanding of how data format (text vs image) 
+                impacts model performance. I especially enjoyed combining vision and language in creative ways, 
+                like generating handwritten numbers from arithmetic expressions. The iterative process of tuning, analyzing, and 
+                debugging these models was both frustrating and rewarding when you see it working. 
+                It definitely showed me the fun applications of simple AI tasks.
+
+                 
+            </div>
+        </section>
+
+        <section class="sources">
+            <div class=""container>
+                <h3>
+                    Sources
+                </h3>
+                <p>
+                    [1] 
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Yanna Smid. All rights reserved.</p>
+    </footer>
+
+    <script src="hamburger.js"></script>
+    <script src="slider.js"></script>
+</body>
+</html>
