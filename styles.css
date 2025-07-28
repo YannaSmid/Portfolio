@@ -693,6 +693,11 @@ footer {
     border-bottom: 4px solid #5f3db5;
   }
 
+  .mySlides h1 {
+    font-size: 38px;
+    z-index: 2;
+}
+
   .mySlides img {
     /* width: 400px;
     height: 400px; */
