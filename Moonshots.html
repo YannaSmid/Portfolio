@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Moonshots</title>
+    <link rel="stylesheet" href="projectstyle.css">
+</head>
+<body>
+    <!-- Navbar Section -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">MyPortfolio</div>
+            <button class="hamburger" aria-label="Toggle navigation">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero" style="background-image: url('images/Moonshots/AsteroidHit.png'); background-position: 50% 100%;">
+        <div class = "overlay"></div>
+        <div class="hero-text">
+            <h1>Moonshots</h1>
+            <p>Playing a space video game while you are actually in space!</p>
+        </div>
+    </div>
+
+    <main>
+        <!-- Overview Section -->
+        <section class="contributors">
+            <h>
+                Nikki Rademaker, and Yanna Smid
+            </h>
+        </section>
+        <section class="project-overview">
+            <div class="container">
+                <h2>Project Overview</h2>
+                <p>
+                    As part of MOONSHOTS ‘24, a national innovation challenge organized by the Netherlands Space Office (NSO) 
+                    and astronaut André Kuipers, our team developed a game concept to support astronaut mental health aboard 
+                    the ISS. After months of ideation, research, and feedback from real astronauts, we created a space shooter 
+                    prototype designed to provide relaxation during long, high-stress missions in space.
+                    
+                </p>
+                <p>
+                    The main goal for this project is to come up with an innovative idea that can be useful to NASA.
+                    We proposed our Space Shooting Video Game, that uses the actual space environment as the in-game environment.
+                    Astronauts can play this video game in the Capula, to relax and to have some fun, while enjoying the sci-fi reality.
+                </p>
+
+                
+            </div>
+        </section>
+
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 5</div>
+              <img src="images/Moonshots/ShootingAtAsteroid.png">
+          
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 5</div>
+              <img src="images/Moonshots/AsteroidHit.png" >
+             
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 5</div>
+              <img src="images/Moonshots/GameOver.png" ">
+            
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 5</div>
+                <img src="images/Moonshots/Died.png" ">
+              
+              </div>
+
+                 <div class="mySlides fade">
+                <div class="numbertext">5 / 5</div>
+                <img src="images/Moonshots/GameOver.png" ">
+              
+              </div>
+
+      
+
+
+          
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+          
+          <!-- The dots/circles -->
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+          </div>
+    
+
+        <!-- Features Section -->
+        <section class="Key Features">
+            <div class="container">
+                <h2>Features</h2>
+                <ul>
+                    <li>
+                        Mental Health Focus: Based on psychological research into astronaut well-being and the therapeutic potential 
+                        of video games.
+ 
+                    </li>
+                    <li>Unique Space Integration: This video game cannot be played on earth, because it uses the real view from the 
+                        Cupola observatory on the ISS as a visual backdrop. It is purely meant for astronauts in space!
+                    </li>
+                    <li>AR Game Concept: Designed to run on AR glasses already used aboard the ISS, eliminating the need for hardware changes.
+
+                    </li>
+                    <li>
+                        Custom Controls: Tested several input methods (eye tracking, gestures, joystick), ultimately proposing a simple arcade-style 
+                        controller optimized for microgravity.
+
+                    </li>
+                    <li>
+                        Friendly Competition: Includes a scoring system and plans for an in-mission leaderboard to boost morale and social bonding.
+
+                    </li>
+
+                </ul>
+                
+            </div>
+        </section>
+
+
+        <!-- Technical Details Section -->
+        <section class="technical-details">
+            <div class="container">
+                <h2>Technical Details</h2>
+                <ul>
+                    <li>
+                        Programming: Unity, C#  
+                    </li>
+                    <li>
+                        Modeling: Blender for the astroids modeling and animation
+                    </li>
+                    <li>
+                        User tests were conducted to test the prototype
+                    </li>
+                    <li>
+                        Presentation: Our idea was presented at the MOONSHOTS'24 conference, to real astronauts.
+                    </li>
+                </ul>
+
+            </div>
+        </section>
+
+
+        <!-- Future Work Section -->
+        <section class="reflection">
+            <div class="container">
+            <h2>Reflection</h2>
+            <p>This project brought together technical development, speculative design, and mental health research.
+                 Working on AstroArcade showed how game design can extend beyond entertainment and be used for the well-being of astronauts.
+                 Collaborating with astronauts inspired us to account 
+                 for real-world constraints like microgravity and spatial limitations. It also sharpened our ability to 
+                 explain complex technical designs to non-technical experts.
+
+                 <img src="images/Moonshots/moonshotsEvent.png" alt="Interface" class="project-image" width="50%">
+            </div>
+        </section>
+
+        <section class="sources">
+            <div class=""container>
+                <h3>
+                    Sources
+                </h3>
+                <p>
+                    [1] 
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Yanna Smid. All rights reserved.</p>
+    </footer>
+
+    <script src="hamburger.js"></script>
+    <script src="slider.js"></script>
+</body>
+</html>

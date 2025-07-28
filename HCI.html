@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FlightWave</title>
+    <link rel="stylesheet" href="projectstyle.css">
+</head>
+<body>
+    <!-- Navbar Section -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">MyPortfolio</div>
+            <button class="hamburger" aria-label="Toggle navigation">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero" style="background-image: url('images/HCI/menu.jpeg'); background-position: 50% 100%;">
+        <div class = "overlay"></div>
+        <div class="hero-text">
+            <h1>FlightWave</h1>
+            <p>Wave to your next flight, with this interactive information system.</p>
+        </div>
+    </div>
+
+    <main>
+        <!-- Overview Section -->
+        <section class="contributors">
+            <h>
+                By Yanna Smid
+            </h>
+        </section>
+        <section class="project-overview">
+            <div class="container">
+                <h2>Project Overview</h2>
+                <p>
+                    Airports are places of anticipation, of reunions, adventures, and new beginnings. But for many, they’re also filled 
+                    with stress, uncertainty, and long hours of waiting. We asked: What if looking up your flight could feel less like 
+                    decoding a spreadsheet, and more like exploring the world with your hands?
+                    
+                </p>
+                <p>
+                    This project for Human Computer Interaction, reimagines flight information displays as an interactive, 3D globe interface, controlled entirely by hand 
+                    gestures using Leap Motion. Instead of static screens filled with hard-to-read text, passengers can now physically engage 
+                    with a dynamic world map. With the interactive FlightWave, you can see exactly where your flight will go and 
+                    can interact with it in a way that’s playful, intuitive,
+                     and calming.
+                    Whether you’re a nervous traveler who needs reassurance, or a curious one excited by the journey ahead—this system makes the 
+                    wait more meaningful. It transforms flight anxiety into wonder, and passive waiting into active exploration.
+                </p>
+
+                
+            </div>
+        </section>
+
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 5</div>
+              <img src="images/HCI/rotating.jpeg">
+          
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 5</div>
+              <img src="images/HCI/selecting.jpeg" >
+             
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 5</div>
+              <img src="images/HCI/instructions.jpeg" ">
+            
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 5</div>
+                <img src="images/HCI/button1.jpeg" ">
+              
+              </div>
+
+                 <div class="mySlides fade">
+                <div class="numbertext">5 / 5</div>
+                <img src="images/HCI/menu.jpeg" ">
+              
+              </div>
+
+      
+
+
+          
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+          
+          <!-- The dots/circles -->
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+          </div>
+    
+
+        <!-- Features Section -->
+        <section class="Key Features">
+            <div class="container">
+                <h2>Features</h2>
+                <ul>
+                    <li>
+                        3D Flight Route Visualization: Users can see the actual path their plane will take across a rotating globe.
+ 
+                    </li>
+                    <li>Touchless Interaction: Powered by Leap Motion, passengers control the system using only hand gestures—no screens to touch, improving hygiene and accessibility.
+                    </li>
+                    <li>Custom Gesture System: Swipe to rotate the globe, Point to select a destination, Palm-up gesture to stop movement
+                    </li>
+                    <li>
+                        Custom Controls: Tested several input methods (eye tracking, gestures, joystick), ultimately proposing a simple arcade-style 
+                        controller optimized for microgravity.
+
+                    </li>
+                    <li>
+                        Menu & Instruction Screens: Help new users quickly understand the gestures with interactive demos.
+                    </li>
+
+                </ul>
+                
+            </div>
+        </section>
+
+
+        <!-- Technical Details Section -->
+        <section class="technical-details">
+            <div class="container">
+                <h2>Technical Details</h2>
+                <ul>
+                    <li>
+                        Programming: Unity, C#  
+                    </li>
+                    <li>
+                        Leap Motion SDK: Used for capturing and translating hand gestures
+                    </li>
+                    <li>
+                        User tests were conducted to test the prototype
+                    </li>
+                    <li>
+                        Custom Gesture Mapping: Designed to reflect familiar, real-world movements such as 
+                        rotating a physical globe or raising a hand to stop something
+                    </li>
+                </ul>
+                <video src="images/HCI/FirstPrototypeVid_Trim.mp4" width="100%" height="500vh"  controls></video>
+            </div>
+        </section>
+
+
+        <!-- Future Work Section -->
+        <section class="reflection">
+            <div class="container">
+            <h2>Reflection</h2>
+            <p>The project started with a simple question: how can we make airport monitors more informative, 
+                fun, and stress-relieving? Many passengers experience flight anxiety—especially when unsure about where 
+                their plane is flying. By visualizing the flight path, this tool can offer both reassurance and curiosity.
+                The development taught us how to design around real-world user experience constraints, from motion control 
+                limitations to age inclusivity and instruction clarity. Creating a fun, intuitive, and hygienic system also 
+                showed how small design tweaks can make technology feel more human and less intimidating.
+                Ultimately, this project showcased how emerging tech like Leap Motion can go beyond novelty and support 
+                meaningful improvements in everyday environments like airports.
+                 
+            </div>
+        </section>
+
+       
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Yanna Smid. All rights reserved.</p>
+    </footer>
+
+    <script src="hamburger.js"></script>
+    <script src="slider.js"></script>
+</body>
+</html>

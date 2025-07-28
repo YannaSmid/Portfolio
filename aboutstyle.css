@@ -1,0 +1,320 @@
+/* body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+} */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #e5e5f3;
+    color: #1e1e2f;
+}
+
+
+header {
+    background-color: #1e1e2f;
+    /* padding: 20px 0; */
+    width: 100%;
+    height: 12vh;
+    overflow: visible;
+}
+
+/* Hero Section */
+.hero {
+    
+    height: 38vh; /* Adjust height as necessary */
+    max-height: 450px;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+    text-align: center;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    border-bottom-style: solid;
+    border-color: #5f3db5;
+    border-radius: 2px;
+    
+}
+
+
+.hero-text h1 {
+    font-size: 38px;
+}
+
+.hero-text p {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.hero-text .purple-text {
+    color: #8c5bff;
+}
+
+.hero img{
+    border-bottom-style: solid;
+    border-color: #5f3db5;
+    border-radius: 2px;
+}
+
+
+/* Default Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    /* max-height: 80%; */
+    height:100%;
+    margin: 0 auto;
+    padding: 0 0px;
+    
+    background-color: #1e1e2f; /* Ensure navbar visibility */
+    
+}
+
+.logo {
+    font-size: 24px;
+    color: #fff;
+}
+
+
+/* .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px; 
+    padding: 0 20px;
+    background-color: #1e1e2f;
+} */
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.nav-links li {
+    flex: 1; /* Equal width */
+    height: 100%;
+    margin: 0; /* No gap between boxes */
+    display: flex;
+}
+
+.nav-links li a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px; /* Add horizontal padding inside the text box */
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    transition: background 0.3s ease;
+    box-sizing: border-box; /* Ensures padding doesn't overflow the box */
+}
+
+/* Hover background */
+.nav-links li a:hover {
+    background-color: rgba(243, 238, 255, 0.3); /* light purple */
+}
+
+/* Underline at the bottom */
+.nav-links li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #9900ff;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.nav-links li a:hover::after {
+    opacity: 1;
+}
+
+/* Hamburger Menu Hidden by Default */
+.hamburger {
+    display: none;
+}
+
+.cv-download-link {
+    display: inline-block;
+    margin-top: 1em;
+    padding: 0.6em 1.2em;
+    background-color: #6a1b9a;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.cv-download-link:hover {
+    background-color: #4a148c;
+}
+
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    /* Hide Navigation Links by Default */
+    .nav-links {
+        display: none; /* Initially hidden for mobile */
+        flex-direction: column; /* Stack links vertically */
+        position: absolute;
+        top: 60px; /* Adjust to match navbar height */
+        right: 10px;
+        background-color: #1e1e2f;
+        border-radius: 8px;
+        padding: 1rem;
+        z-index: 1000;
+    }
+
+    /* Show Navigation Links When Active */
+    .nav-links.active {
+        display: flex; /* Make links visible */
+        list-style-type: none;
+        
+    }
+    .nav-links li {
+        margin: 10px 0; /* Adds vertical spacing between items */
+    }
+    
+    .nav-links li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 16px;
+        padding: 10px 20px; /* Increase horizontal and vertical padding */
+        border-radius: 5px;
+    }
+
+    
+    /* Hamburger Menu Styling */
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        cursor: pointer;
+        background: none;
+        border: none;
+    }
+
+    .hamburger .line {
+        width: 25px;
+        height: 3px;
+        background: #ffffff;
+    }
+}
+
+.content-box {
+    padding: 20vw;
+    position: center;
+    background-color: #e5e5f3;
+    border: 2px solid #5f3db5;
+    height: 100%;
+    column-width: 100%;
+  }
+
+
+.btn {
+    background-color: #5f3db5;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #9b5bc1;
+}
+
+.btn.active {
+    background-color: #9b5bc1;
+    color: white;
+  }
+
+main {
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-section, .skills-section{
+    margin: 40px 0;
+}
+
+.about-section .purple-text {
+    color: #5f3db5;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* Skills Section */
+.skills-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skills-list li {
+    background-color: #362562;
+    color: #fff;
+    margin: 8px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.cta-btn {
+    background-color: #5f3db5;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-btn:hover {
+    background-color: #9b5bc1;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1vh 3vw;
+}

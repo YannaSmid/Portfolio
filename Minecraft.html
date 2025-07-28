@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Moonshots</title>
+    <link rel="stylesheet" href="projectstyle.css">
+</head>
+<body>
+    <!-- Navbar Section -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">MyPortfolio</div>
+            <button class="hamburger" aria-label="Toggle navigation">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero" style="background-image: url('images/Minecraft/tower_jungle.png'); background-position: 0% 0%;">
+        <div class = "overlay"></div>
+        <div class="hero-text">
+            <h1>Minecraft: A Tangled Code</h1>
+            <p>Rapunzel in a blocky world, with this tangled code!</p>
+        </div>
+    </div>
+
+    <main>
+        <!-- Overview Section -->
+        <section class="contributors">
+            <h>
+                By Yanna Smid
+            </h>
+        </section>
+        <section class="project-overview">
+            <div class="container">
+                <h2>Project Overview</h2>
+                <p>
+                    Building architecture in Minecraft can be a fun but an endless task. Therefore, an automated function
+                    that builds exactly what you want sounds more practical!
+                     This project explores the use of GDPC (Generative Design in Procedural Content) in Minecraft 
+                     to generate a fully adaptive architectural structure: 
+                    a tower inspired by Rapunzel’s tower from Tangled. Built entirely through Python, the tower dynamically 
+                    adjusts its design based on environmental factors like terrain type, biome, and available space.
+
+                 </p>
+                <p>
+                    By combining environment analysis (e.g., heightmaps, water/obstacle detection) with randomized design parameters, 
+                    the generator constructs a unique tower each time it is run. From exterior shape and material selection to
+                     interior decoration and environmental integration, the system balances logic with variation, demonstrating how 
+                     procedural content can be both functional and aesthetically compelling.
+
+                    This project was inspired by challenges such as the GDMC (Generative Design in Minecraft Competition), 
+                    where content must not only be algorithmically generated, but also be coherent, adaptable, and engaging. 
+                    It serves as a case study in computational creativity—bridging world generation, game design, and AI-driven 
+                    architecture.
+       
+                </p>
+
+                
+            </div>
+        </section>
+
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 5</div>
+              <img src="images/Minecraft/tower_icyblocks.png">
+          
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 5</div>
+              <img src="images/Minecraft/livingroom_interior5.png" >
+             
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 5</div>
+              <img src="images/Minecraft/garden1.png" ">
+            
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 5</div>
+                <img src="images/Minecraft/tower_icyblocks.png" ">
+              
+              </div>
+
+                 <div class="mySlides fade">
+                <div class="numbertext">5 / 5</div>
+                <img src="images/Minecraft/staircase2.png" ">
+              
+              </div>
+
+      
+
+
+          
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+          
+          <!-- The dots/circles -->
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+          </div>
+    
+
+        <!-- Features Section -->
+        <section class="Key Features">
+            <div class="container">
+                <h2>Features</h2>
+                <ul>
+                    <li>
+                        Procedurally Generated Tower: A multi-segment tower with random height, width, and material combinations.
+ 
+                    </li>
+                    <li>Adaptive Terrain Detection: An intelligent algorithm finds the flattest, most buildable area using heightmaps and terrain scanning.
+                    </li>
+                    <li>Dynamic Aesthetics: Varying architectural features like balconies, windows, pointy roofs, and biomes-specific gardens. The outside 
+                        of the tower is completely inspired by the tower in Tangled.
+                    </li>
+                    <li>
+                        Interior Design: Randomized cozy interiors including a living room, bedroom, lanterns, furniture, and hidden staircase.
+
+                    </li>
+                
+
+                </ul>
+                
+            </div>
+        </section>
+
+
+        <!-- Technical Details Section -->
+        <section class="technical-details">
+            <div class="container">
+                <h2>Technical Details</h2>
+                <ul>
+                    <li>
+                        Programming: Python, GDPC (Generative Design for Procedural Content) library
+                    </li>
+                    <li>
+                        Environment: Minecraft Java Edition
+                    </li>
+                    <li>
+                        Heightmap analysis, spatial logic, random generation, environment-aware design
+                    </li>
+             
+                </ul>
+
+            </div>
+        </section>
+
+
+        <!-- Future Work Section -->
+        <section class="reflection">
+            <div class="container">
+            <h2>Reflection</h2>
+            <p>This project was a deep dive into the intersection of game design, AI, and creative coding. 
+                It taught me how computational logic can be used not just for utility, but for storytelling, 
+                aesthetic expression, and emergent design. Balancing structure with randomness made the system both 
+                robust and surprising, just like a fairy tale unfolding block by block. This made me look forward to my 
+                next Minecraft adventure.
+
+                
+            </div>
+        </section>
+
+        <section class="sources">
+            <div class=""container>
+                <h3>
+                    Sources
+                </h3>
+                <p>
+                    [1] 
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Yanna Smid. All rights reserved.</p>
+    </footer>
+
+    <script src="hamburger.js"></script>
+    <script src="slider.js"></script>
+</body>
+</html>
